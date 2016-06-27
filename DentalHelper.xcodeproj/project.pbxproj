@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8015BB201CF5976A0044E47C /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8015BB1F1CF5976A0044E47C /* Appointment.m */; };
 		8015BB241CF599C50044E47C /* NewAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8015BB231CF599C50044E47C /* NewAppointmentViewController.m */; };
+		803F7FE81D21C0D400D5EE4B /* AddPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */; };
+		803F7FEA1D21C0E500D5EE4B /* AddPatientViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */; };
 		806301591CF497760041D307 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FA30181CD25DD700B278E3 /* Realm.framework */; };
 		8063015A1CF497760041D307 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80FA30181CD25DD700B278E3 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8063015E1CF4D4C10041D307 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8063015D1CF4D4C10041D307 /* CalendarViewController.m */; };
@@ -25,6 +27,8 @@
 		8063018F1CF4D5310041D307 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */; };
 		806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301841CF4D5310041D307 /* JTVerticalCalendarView.m */; };
 		809FE02C1D215CB300F8416B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02B1D215CB300F8416B /* Utils.m */; };
+		809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02F1D216D9E00F8416B /* PatientsViewController.m */; };
+		809FE0331D216EC300F8416B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE0321D216EC300F8416B /* Patient.m */; };
 		80EBD4521CC8160E003E4A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4511CC8160E003E4A5E /* main.m */; };
 		80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4541CC8160E003E4A5E /* AppDelegate.m */; };
 		80EBD4581CC8160E003E4A5E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4571CC8160E003E4A5E /* FirstViewController.m */; };
@@ -73,6 +77,9 @@
 		8015BB1F1CF5976A0044E47C /* Appointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Appointment.m; path = Assets.xcassets/Appointment.m; sourceTree = "<group>"; };
 		8015BB221CF599C50044E47C /* NewAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAppointmentViewController.h; sourceTree = "<group>"; };
 		8015BB231CF599C50044E47C /* NewAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAppointmentViewController.m; sourceTree = "<group>"; };
+		803F7FE61D21C0D400D5EE4B /* AddPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPatientViewController.h; sourceTree = "<group>"; };
+		803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPatientViewController.m; sourceTree = "<group>"; };
+		803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPatientViewController.storyboard; sourceTree = "<group>"; };
 		8063015C1CF4D4C10041D307 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		8063015D1CF4D4C10041D307 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		806301621CF4D5310041D307 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
@@ -109,6 +116,10 @@
 		806301841CF4D5310041D307 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
 		809FE02A1D215CB300F8416B /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		809FE02B1D215CB300F8416B /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		809FE02E1D216D9E00F8416B /* PatientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsViewController.h; sourceTree = "<group>"; };
+		809FE02F1D216D9E00F8416B /* PatientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsViewController.m; sourceTree = "<group>"; };
+		809FE0311D216EC300F8416B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		809FE0321D216EC300F8416B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 		80EBD44D1CC8160E003E4A5E /* DentalHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DentalHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EBD4511CC8160E003E4A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80EBD4531CC8160E003E4A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +174,8 @@
 			children = (
 				8015BB1E1CF5976A0044E47C /* Appointment.h */,
 				8015BB1F1CF5976A0044E47C /* Appointment.m */,
+				809FE0311D216EC300F8416B /* Patient.h */,
+				809FE0321D216EC300F8416B /* Patient.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,6 +187,16 @@
 				8015BB231CF599C50044E47C /* NewAppointmentViewController.m */,
 			);
 			name = NewAppointmentViewController;
+			sourceTree = "<group>";
+		};
+		803F7FE51D21C0B800D5EE4B /* AddPatientViewController */ = {
+			isa = PBXGroup;
+			children = (
+				803F7FE61D21C0D400D5EE4B /* AddPatientViewController.h */,
+				803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */,
+				803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */,
+			);
+			name = AddPatientViewController;
 			sourceTree = "<group>";
 		};
 		8063015F1CF4D4CC0041D307 /* Calendar */ = {
@@ -265,6 +288,15 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		809FE02D1D216D5A00F8416B /* PatientsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				809FE02E1D216D9E00F8416B /* PatientsViewController.h */,
+				809FE02F1D216D9E00F8416B /* PatientsViewController.m */,
+			);
+			name = PatientsViewController;
+			sourceTree = "<group>";
+		};
 		80EBD4441CC8160E003E4A5E = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +321,8 @@
 		80EBD44F1CC8160E003E4A5E /* DentalHelper */ = {
 			isa = PBXGroup;
 			children = (
+				803F7FE51D21C0B800D5EE4B /* AddPatientViewController */,
+				809FE02D1D216D5A00F8416B /* PatientsViewController */,
 				809FE0291D215CA100F8416B /* Utils */,
 				8015BB211CF599A10044E47C /* NewAppointmentViewController */,
 				8015BB1D1CF597340044E47C /* Model */,
@@ -405,6 +439,7 @@
 				TargetAttributes = {
 					80EBD44C1CC8160E003E4A5E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 54MM8888KF;
 					};
 					80EBD4681CC8160E003E4A5E = {
 						CreatedOnToolsVersion = 7.3;
@@ -444,6 +479,7 @@
 				80EBD4631CC8160E003E4A5E /* LaunchScreen.storyboard in Resources */,
 				80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */,
 				80EBD45E1CC8160E003E4A5E /* Main.storyboard in Resources */,
+				803F7FEA1D21C0E500D5EE4B /* AddPatientViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +506,7 @@
 			files = (
 				806301871CF4D5310041D307 /* JTDateHelper.m in Sources */,
 				8015BB201CF5976A0044E47C /* Appointment.m in Sources */,
+				809FE0331D216EC300F8416B /* Patient.m in Sources */,
 				806301861CF4D5310041D307 /* JTCalendarSettings.m in Sources */,
 				806301881CF4D5310041D307 /* JTCalendarDelegateManager.m in Sources */,
 				8063018A1CF4D5310041D307 /* JTCalendarDayView.m in Sources */,
@@ -477,6 +514,7 @@
 				8063018B1CF4D5310041D307 /* JTCalendarMenuView.m in Sources */,
 				80EBD45B1CC8160E003E4A5E /* SecondViewController.m in Sources */,
 				806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */,
+				803F7FE81D21C0D400D5EE4B /* AddPatientViewController.m in Sources */,
 				8063018D1CF4D5310041D307 /* JTCalendarWeekDayView.m in Sources */,
 				80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */,
 				80FA30171CD24DE700B278E3 /* ScheduleViewController.m in Sources */,
@@ -484,6 +522,7 @@
 				806301851CF4D5310041D307 /* JTCalendarManager.m in Sources */,
 				80EBD4581CC8160E003E4A5E /* FirstViewController.m in Sources */,
 				8063015E1CF4D4C10041D307 /* CalendarViewController.m in Sources */,
+				809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */,
 				8063018C1CF4D5310041D307 /* JTCalendarPageView.m in Sources */,
 				806301891CF4D5310041D307 /* JTCalendarScrollManager.m in Sources */,
 				8063018E1CF4D5310041D307 /* JTCalendarWeekView.m in Sources */,
@@ -631,6 +670,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -639,6 +680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.rbugaian.DentalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -646,6 +688,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -654,6 +698,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.rbugaian.DentalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <Realm/Realm.h>
+#import "Patient.h"
 
 @interface Appointment : RLMObject
 
 @property NSDate *startDate;
 @property NSDate *endDate;
+@property Patient *patient;
 
 @end

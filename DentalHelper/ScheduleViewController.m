@@ -33,11 +33,9 @@ CGFloat navbarMargin = 84.0f;
     [self.scrollView setAlwaysBounceVertical:YES];
     
     [self generateScheduleGrid];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectDay:) name:@"day_selected" object:nil];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     _appointentViews = [NSMutableArray array];
     
     [self reloadScheduleForDate:[Utils getLocalDate]];
@@ -53,7 +51,7 @@ CGFloat navbarMargin = 84.0f;
     NSMutableArray *appointmetsArray = [NSMutableArray array];
     for (int i = 0; i < allAppointments.count; i++) {
         Appointment *appointment = [allAppointments objectAtIndex:i];
-        if ([[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]) {
+        if ([[NSCalendar currentCalendar] isDate:[Utils getLocalDate:appointment.startDate] inSameDayAsDate:date]) {
             [appointmetsArray addObject:appointment];
         }
     }
@@ -141,7 +139,12 @@ CGFloat navbarMargin = 84.0f;
     CGFloat intervalSinceDayStart = [currentTime timeIntervalSinceDate:dayStart];
     
     CGFloat y = intervalSinceDayStart / rowHeight;
-    return y;
+    
+    if (y < (self.scrollView.contentSize.height - y)) {
+        return y;
+    } else {
+        return self.scrollView.contentSize.height - self.scrollView.frame.size.height;
+    }
 }
 
 
@@ -172,9 +175,6 @@ CGFloat navbarMargin = 84.0f;
         
         [self.scrollView addSubview:separatorView];
     }
-}
-
-- (void)didSelectDay:(NSNotification *)notification {
 }
 
 -(void)showScheduleForDay:(NSDate *)date {

@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[ScheduleViewController reloadScheduleForDate:]:ScheduleViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+            </PersistentString>
+            <PersistentString
+               value = "appointment.startDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[FirstViewController viewDidLoad]:FirstViewController.m">
          <PersistentStrings>
             <PersistentString
