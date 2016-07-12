@@ -29,7 +29,7 @@
         <scene sceneID="dDP-M2-jQe">
             <objects>
                 <navigationController id="MFq-dY-1Pa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="VPZ-9M-KMO"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule_tab_icon" id="VPZ-9M-KMO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gns-gc-W1d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -134,7 +134,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="START">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -147,7 +147,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="END">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                         </attributes>
                                     </fragment>
@@ -207,14 +207,14 @@
                                             <rect key="frame" x="15" y="5" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7fO-E0-iNR">
                                             <rect key="frame" x="15" y="25" width="31" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -250,7 +250,7 @@
         <scene sceneID="ctd-RM-Shh">
             <objects>
                 <navigationController id="BK9-cg-IRz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Patients" id="aPr-XL-sDi"/>
+                    <tabBarItem key="tabBarItem" title="Patients" image="patients_tap_icon" id="aPr-XL-sDi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y7k-LS-FMV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -352,5 +352,7 @@
     </scenes>
     <resources>
         <image name="calendar_icon" width="22" height="22"/>
+        <image name="patients_tap_icon" width="25" height="24"/>
+        <image name="schedule_tab_icon" width="19" height="25"/>
     </resources>
 </document>

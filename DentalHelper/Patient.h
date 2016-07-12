@@ -12,10 +12,15 @@
 @interface Patient : RLMObject
 
 @property NSString *firstName;
+
 @property NSString *lastName;
-@property NSDate *birthDate;
+
 @property NSString *telephoneNumber;
+
+@property NSString *mobileNumber;
+
 @property NSString *emailAddress;
 
+@property NSDate *birthDate;
 
 @end
