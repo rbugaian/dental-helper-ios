@@ -10,4 +10,9 @@
 
 @implementation Patient
 
++ (NSString *)primaryKey {
+    return @"id";
+}
+
+
 @end

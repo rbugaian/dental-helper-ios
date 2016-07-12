@@ -26,6 +26,8 @@
 		8063018E1CF4D5310041D307 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301801CF4D5310041D307 /* JTCalendarWeekView.m */; };
 		8063018F1CF4D5310041D307 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */; };
 		806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301841CF4D5310041D307 /* JTVerticalCalendarView.m */; };
+		80831A921D350BFF007D77C4 /* PatientsNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80831A911D350BFF007D77C4 /* PatientsNotesViewController.m */; };
+		80831A941D350C23007D77C4 /* PatientNotesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80831A931D350C23007D77C4 /* PatientNotesViewController.storyboard */; };
 		809FE02C1D215CB300F8416B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02B1D215CB300F8416B /* Utils.m */; };
 		809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02F1D216D9E00F8416B /* PatientsViewController.m */; };
 		809FE0331D216EC300F8416B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE0321D216EC300F8416B /* Patient.m */; };
@@ -114,6 +116,9 @@
 		806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
 		806301831CF4D5310041D307 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
 		806301841CF4D5310041D307 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		80831A901D350BFF007D77C4 /* PatientsNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsNotesViewController.h; sourceTree = "<group>"; };
+		80831A911D350BFF007D77C4 /* PatientsNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsNotesViewController.m; sourceTree = "<group>"; };
+		80831A931D350C23007D77C4 /* PatientNotesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PatientNotesViewController.storyboard; sourceTree = "<group>"; };
 		809FE02A1D215CB300F8416B /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		809FE02B1D215CB300F8416B /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		809FE02E1D216D9E00F8416B /* PatientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsViewController.h; sourceTree = "<group>"; };
@@ -279,6 +284,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		80831A8F1D350BDE007D77C4 /* PatientNotesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80831A901D350BFF007D77C4 /* PatientsNotesViewController.h */,
+				80831A911D350BFF007D77C4 /* PatientsNotesViewController.m */,
+				80831A931D350C23007D77C4 /* PatientNotesViewController.storyboard */,
+			);
+			name = PatientNotesViewController;
+			sourceTree = "<group>";
+		};
 		809FE0291D215CA100F8416B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +336,7 @@
 		80EBD44F1CC8160E003E4A5E /* DentalHelper */ = {
 			isa = PBXGroup;
 			children = (
+				80831A8F1D350BDE007D77C4 /* PatientNotesViewController */,
 				803F7FE51D21C0B800D5EE4B /* AddPatientViewController */,
 				809FE02D1D216D5A00F8416B /* PatientsViewController */,
 				809FE0291D215CA100F8416B /* Utils */,
@@ -478,6 +494,7 @@
 			files = (
 				80EBD4631CC8160E003E4A5E /* LaunchScreen.storyboard in Resources */,
 				80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */,
+				80831A941D350C23007D77C4 /* PatientNotesViewController.storyboard in Resources */,
 				80EBD45E1CC8160E003E4A5E /* Main.storyboard in Resources */,
 				803F7FEA1D21C0E500D5EE4B /* AddPatientViewController.storyboard in Resources */,
 			);
@@ -516,6 +533,7 @@
 				806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */,
 				803F7FE81D21C0D400D5EE4B /* AddPatientViewController.m in Sources */,
 				8063018D1CF4D5310041D307 /* JTCalendarWeekDayView.m in Sources */,
+				80831A921D350BFF007D77C4 /* PatientsNotesViewController.m in Sources */,
 				80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */,
 				80FA30171CD24DE700B278E3 /* ScheduleViewController.m in Sources */,
 				809FE02C1D215CB300F8416B /* Utils.m in Sources */,

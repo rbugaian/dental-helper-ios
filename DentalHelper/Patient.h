@@ -11,6 +11,8 @@
 
 @interface Patient : RLMObject
 
+@property NSInteger id;
+
 @property NSString *firstName;
 
 @property NSString *lastName;
@@ -20,6 +22,8 @@
 @property NSString *mobileNumber;
 
 @property NSString *emailAddress;
+
+@property NSString *notes;
 
 @property NSDate *birthDate;
 

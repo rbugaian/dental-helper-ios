@@ -9,11 +9,15 @@
 #import "AddPatientViewController.h"
 #import "Patient.h"
 #import <Realm/Realm.h>
+#import "Utils.h"
+#import "PatientsNotesViewController.h"
 
 @interface AddPatientViewController ()
 
 @property NSMutableArray *allergies;
 @property NSMutableArray *lastVisits;
+
+@property NSDate *selectedDate;
 
 @end
 
@@ -22,22 +26,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initTextFields];
-    
 }
 
 - (void)initTextFields {
-    self.firstNameField.delegate = self;
-    self.lastNameField.delegate = self;
-    self.birthDateField.delegate = self;
-    self.mobilePhoneField.delegate = self;
-    self.telephoneField.delegate = self;
-    self.emailField.delegate = self;
-    
-    self.birthDateField.inputView = [self createDatePickerInstance];
-    
-    self.birthDateField.inputAccessoryView = self.nextButtonToolbar;
-    self.mobilePhoneField.inputAccessoryView = self.nextButtonToolbar;
-    self.telephoneField.inputAccessoryView = self.nextButtonToolbar;
+    if (self.editModeOn) {
+        self.rightBarButton.title = @"Save";
+        self.rightBarButton.tintColor = self.view.tintColor;
+        
+        self.firstNameField.enabled = YES;
+        self.lastNameField.enabled = YES;
+        self.birthDateField.enabled = YES;
+        self.mobilePhoneField.enabled = YES;
+        self.telephoneField.enabled = YES;
+        self.emailField.enabled = YES;
+        
+        self.firstNameField.delegate = self;
+        self.lastNameField.delegate = self;
+        self.birthDateField.delegate = self;
+        self.mobilePhoneField.delegate = self;
+        self.telephoneField.delegate = self;
+        self.emailField.delegate = self;
+        
+        self.birthDateField.inputView = [self createDatePickerInstance];
+        
+        self.birthDateField.inputAccessoryView = self.nextButtonToolbar;
+        self.mobilePhoneField.inputAccessoryView = self.nextButtonToolbar;
+        self.telephoneField.inputAccessoryView = self.nextButtonToolbar;
+    } else if (self.patient != nil) {
+        self.rightBarButton.title = @"Edit";
+        self.rightBarButton.tintColor = [UIColor redColor];
+        
+        self.firstNameField.text = self.patient.firstName;
+        self.lastNameField.text = self.patient.lastName;
+        self.birthDateField.text = [Utils dateStringFromDate:self.patient.birthDate];
+        self.mobilePhoneField.text = self.patient.mobileNumber;
+        self.telephoneField.text = self.patient.telephoneNumber;
+        self.emailField.text = self.patient.emailAddress;
+        
+        self.firstNameField.enabled = NO;
+        self.lastNameField.enabled = NO;
+        self.birthDateField.enabled = NO;
+        self.mobilePhoneField.enabled = NO;
+        self.telephoneField.enabled = NO;
+        self.emailField.enabled = NO;
+    }
 }
 
 - (void)onBirthDateNextTap:(id)sender {
@@ -89,27 +121,107 @@
 }
 
 - (void)birthDatePickerValueChanged:(UIDatePicker *)datePicker {
-    
+    [self.birthDateField setText:[Utils dateStringFromDate:datePicker.date]];
+    self.selectedDate = datePicker.date;
 }
 
-- (void)onSaveTap:(id)sender {
+- (BOOL)saveNewPatient {
     Patient *newPatient = [[Patient alloc] init];
     [newPatient setFirstName:self.firstNameField.text];
     [newPatient setLastName:self.lastNameField.text];
     
-    UIDatePicker *birthDatePicker = (UIDatePicker *)self.birthDateField.inputView;
-    [newPatient setBirthDate:birthDatePicker.date];
+    [newPatient setBirthDate:_selectedDate];
     
     [newPatient setMobileNumber:self.mobilePhoneField.text];
     [newPatient setTelephoneNumber:self.telephoneField.text];
     [newPatient setEmailAddress:self.emailField.text];
+    [newPatient setNotes:self.patientsNotes];
     
-    RLMRealm *realm = [RLMRealm defaultRealm];
-    [realm transactionWithBlock:^{
-        [realm addObject:newPatient];
-    }];
+    if (newPatient.lastName.length != 0 &&
+        newPatient.firstName.length != 0 &&
+        newPatient.birthDate &&
+        newPatient.mobileNumber.length != 0 &&
+        newPatient.emailAddress.length != 0) {
+        
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        [realm transactionWithBlock:^{
+            [realm addObject:newPatient];
+        }];
+        
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+- (BOOL)saveExistingPatient {
+    [[RLMRealm defaultRealm] beginWriteTransaction];
     
-    [self.tableView becomeFirstResponder];
+    if (self.firstNameField.text.length != 0) {
+        self.patient.firstName = self.firstNameField.text;
+    }
+    
+    if (self.lastNameField.text.length != 0) {
+        self.patient.lastName = self.lastNameField.text;
+    }
+    
+    if (self.selectedDate != nil) {
+        self.patient.birthDate = _selectedDate;
+    }
+    
+    if (self.mobilePhoneField.text.length != 0) {
+        self.patient.mobileNumber = self.mobilePhoneField.text;
+    }
+    
+    if (self.telephoneField.text.length != 0) {
+        self.patient.telephoneNumber = self.telephoneField.text;
+    }
+    
+    if (self.emailField.text.length != 0) {
+        self.patient.emailAddress = self.emailField.text;
+    }
+    
+    if (self.patientsNotes.length != 0) {
+        self.patient.notes = self.patientsNotes;
+    }
+    
+    [[RLMRealm defaultRealm] addOrUpdateObject:_patient];
+    [[RLMRealm defaultRealm] commitWriteTransaction];
+    
+    return YES;
+}
+
+- (void)onSaveTap:(id)sender {
+    if (self.editModeOn && self.patient != nil) {
+        BOOL didUpdatePatient = [self saveExistingPatient];
+        if (didUpdatePatient) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    } else if(self.editModeOn && self.patient == nil) {
+        BOOL didSavePatient = [self saveNewPatient];
+        if (didSavePatient) {
+            [self.tableView becomeFirstResponder];
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            [self showFieldMissingAlert];
+        }
+    } else if(!self.editModeOn && self.patient != nil) {
+        self.editModeOn = YES;
+        [self initTextFields];
+    }
+}
+
+- (void)showFieldMissingAlert {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"One or more fields missing. Please fill them." preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"addNoteSegue"]) {
+        PatientsNotesViewController *notesViewController = segue.destinationViewController;
+        notesViewController.addPatientViewController = self;
+    }
 }
 
 

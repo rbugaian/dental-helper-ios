@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection id="U5i-ub-AsB">
+                            <tableViewSection headerTitle="Personal" id="U5i-ub-AsB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FirstnNameCell" id="0jG-2c-RCL">
                                         <rect key="frame" x="0.0" y="99" width="600" height="44"/>
@@ -140,7 +140,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="pd6-OO-ghQ">
+                            <tableViewSection headerTitle="Contacts" id="pd6-OO-ghQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MobilePhoneCell" id="QkQ-7W-nrV">
                                         <rect key="frame" x="0.0" y="267" width="600" height="44"/>
@@ -264,16 +264,16 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="YKy-S6-FVt">
+                            <tableViewSection headerTitle="Additional" id="YKy-S6-FVt">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Allergies" textLabel="Gvc-Sc-dLd" style="IBUITableViewCellStyleDefault" id="9gx-SA-olu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Allergies" textLabel="Gvc-Sc-dLd" style="IBUITableViewCellStyleDefault" id="9gx-SA-olu" userLabel="Notes">
                                         <rect key="frame" x="0.0" y="435" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9gx-SA-olu" id="BCl-Zn-ai9">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Allergies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gvc-Sc-dLd">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gvc-Sc-dLd">
                                                     <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -285,26 +285,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Visits" textLabel="v1o-Cj-RIj" style="IBUITableViewCellStyleDefault" id="ahV-8w-hRH">
-                                        <rect key="frame" x="0.0" y="479" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ahV-8w-hRH" id="LsQ-yo-IJq">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Visits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v1o-Cj-RIj">
-                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular">
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    </variation>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wEC-v1-meC" kind="show" identifier="addNoteSegue" id="rUi-Uj-bpK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -329,6 +312,7 @@
                         <outlet property="lastNameField" destination="l1q-kr-w3J" id="pwh-y5-dps"/>
                         <outlet property="mobilePhoneField" destination="vy4-WD-d3l" id="wF2-kN-Cn3"/>
                         <outlet property="nextButtonToolbar" destination="8ta-mp-6wx" id="IM6-m2-mxH"/>
+                        <outlet property="rightBarButton" destination="fZu-rr-OyK" id="HYl-ci-g2G"/>
                         <outlet property="telephoneField" destination="RAM-w9-hfY" id="6ad-Rl-ZUt"/>
                     </connections>
                 </tableViewController>
@@ -346,6 +330,14 @@
                     </items>
                 </toolbar>
             </objects>
+        </scene>
+        <!--PatientNotesViewController-->
+        <scene sceneID="PmE-ZV-ed9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PatientNotesViewController" id="wEC-v1-meC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpj-T7-Q0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705.5" y="379.5"/>
         </scene>
     </scenes>
 </document>

@@ -219,6 +219,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="eav-U1-z3x" kind="show" identifier="ShowDetailsSegue" id="Xi1-YC-42u"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -229,7 +232,7 @@
                     <navigationItem key="navigationItem" title="Patients" id="VTm-ko-mso">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yyT-t0-41w">
                             <connections>
-                                <segue destination="eav-U1-z3x" kind="show" id="vCP-iU-K5O"/>
+                                <segue destination="eav-U1-z3x" kind="show" identifier="AddPatientSegue" id="vCP-iU-K5O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -355,4 +358,7 @@
         <image name="patients_tap_icon" width="25" height="24"/>
         <image name="schedule_tab_icon" width="19" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vCP-iU-K5O"/>
+    </inferredMetricsTieBreakers>
 </document>

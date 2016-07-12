@@ -10,7 +10,9 @@
 
 @interface Utils : NSObject
 
-+(NSDate *)getLocalDate;
-+(NSDate *)getLocalDate:(NSDate *)sourceDate;
++ (NSDate *)getLocalDate;
++ (NSDate *)getLocalDate:(NSDate *)sourceDate;
++ (NSString *)dateStringFromDate:(NSDate *)date;
+
 
 @end

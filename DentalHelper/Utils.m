@@ -26,5 +26,11 @@
     return destinationDate;
 }
 
++ (NSString *)dateStringFromDate:(NSDate *)date {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    return [dateFormatter stringFromDate:date];
+}
+
 
 @end

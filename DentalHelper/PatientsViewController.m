@@ -8,10 +8,12 @@
 
 #import "PatientsViewController.h"
 #import "Patient.h"
+#import "AddPatientViewController.h"
 
 @interface PatientsViewController ()
 
 @property RLMResults *patients;
+@property Patient *selectedPatient;
 
 @end
 
@@ -22,17 +24,11 @@
     
     _patients = [Patient allObjects];
     
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.clearsSelectionOnViewWillAppear = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -49,58 +45,56 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     Patient *patient = [_patients objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PatientCell" forIndexPath:indexPath];
-    
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", patient.firstName, patient.lastName];
-    cell.detailTextLabel.text = patient.telephoneNumber;
-    
-    // Configure the cell...
+    cell.detailTextLabel.text = patient.mobileNumber;
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _selectedPatient = [_patients objectAtIndex:indexPath.row];
+}
 
-/*
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
+    // Return YES if you want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+        
+        UIAlertController *warningController = [UIAlertController alertControllerWithTitle:@"Warning" message:@"Are you sure to delete current patient from memory?" preferredStyle:UIAlertControllerStyleAlert];
+        [warningController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [self.tableView setEditing:NO animated:YES];
+        }]];
+        
+        [warningController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            
+            Patient *deletingPatient = [_patients objectAtIndex:indexPath.row];
+            [[RLMRealm defaultRealm] beginWriteTransaction];
+            [[RLMRealm defaultRealm] deleteObject:deletingPatient];
+            [[RLMRealm defaultRealm] commitWriteTransaction];
+
+           [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+        }]];
+        
+        [self.navigationController presentViewController:warningController animated:YES completion:nil];
+    }
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"AddPatientSegue"]) {
+        AddPatientViewController *viewController = segue.destinationViewController;
+        viewController.editModeOn = YES;
+        viewController.patient = nil;
+    } else if ([segue.identifier isEqualToString:@"ShowDetailsSegue"]) {
+        NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
+        _selectedPatient = [_patients objectAtIndex:selectedIndexPath.row];
+        AddPatientViewController *viewController  = segue.destinationViewController;
+        viewController.editModeOn = NO;
+        viewController.patient = _selectedPatient;
+    }
 }
-*/
 
 @end
