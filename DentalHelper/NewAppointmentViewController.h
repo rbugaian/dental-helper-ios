@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Patient.h"
 
 @interface NewAppointmentViewController : UITableViewController
 
+@property IBOutlet UILabel *patientFullNameLabel;
 @property IBOutlet UITextField *startDateField;
 @property IBOutlet UITextField *endDateField;
+
+@property (strong, nonatomic) Patient *selectedPatient;
 
 - (IBAction)onDonePressed:(id)sender;
 

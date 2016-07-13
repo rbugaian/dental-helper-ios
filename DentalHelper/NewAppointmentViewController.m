@@ -8,6 +8,7 @@
 
 #import "NewAppointmentViewController.h"
 #import "Appointment.h"
+#import "PatientsViewController.h"
 
 @implementation NewAppointmentViewController
 
@@ -21,7 +22,15 @@
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     
-    [self.view addGestureRecognizer:tap];
+    //[self.view addGestureRecognizer:tap];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (_selectedPatient != nil) {
+        _patientFullNameLabel.text = [NSString stringWithFormat:@"%@ %@", _selectedPatient.firstName, _selectedPatient.lastName];
+    }
 }
 
 - (UIDatePicker *)createDatePickerInstance {
@@ -103,6 +112,14 @@
 - (void)dismissKeyboard {
     [self.startDateField resignFirstResponder];
     [self.endDateField resignFirstResponder];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"SelectPatientSegue"]) {
+        PatientsViewController *viewController = segue.destinationViewController;
+        viewController.selectionModeOn = YES;
+        viewController.createAppointmentViewController = self;
+    }
 }
 
 @end

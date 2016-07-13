@@ -121,15 +121,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Patient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UXg-hA-L1N">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UXg-hA-L1N">
                                                     <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Select Patient">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="0.68123891843971629" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gS4-fB-3Q6" kind="show" identifier="SelectPatientSegue" id="vnf-om-r2N"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -195,12 +204,13 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="endDateField" destination="RN1-sN-fha" id="blI-eQ-Wjb"/>
+                        <outlet property="patientFullNameLabel" destination="UXg-hA-L1N" id="8Em-oh-IWu"/>
                         <outlet property="startDateField" destination="O5Z-Pl-rid" id="yLn-Ns-Ta6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqc-kM-0fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="-382"/>
+            <point key="canvasLocation" x="2667" y="-382"/>
         </scene>
         <!--Patients-->
         <scene sceneID="4ns-De-95v">
@@ -234,9 +244,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="eav-U1-z3x" kind="show" identifier="ShowDetailsSegue" id="Xi1-YC-42u"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -251,10 +258,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="eav-U1-z3x" kind="show" identifier="ShowDetailsSegue" id="XTd-Ow-RtL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rl7-6W-rN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="1210"/>
+            <point key="canvasLocation" x="2371" y="1188"/>
         </scene>
         <!--AddPatientViewController-->
         <scene sceneID="EwJ-Uq-YQt">
@@ -262,7 +272,7 @@
                 <viewControllerPlaceholder storyboardName="AddPatientViewController" id="eav-U1-z3x" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CwB-CU-myd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.5" y="1210"/>
+            <point key="canvasLocation" x="2371.5" y="1678"/>
         </scene>
         <!--Patients-->
         <scene sceneID="ctd-RM-Shh">
@@ -332,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDS-My-aP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="430"/>
+            <point key="canvasLocation" x="1359" y="447"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="oGJ-le-PVl">
@@ -365,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALf-QD-a4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2138" y="430"/>
+            <point key="canvasLocation" x="1990" y="447"/>
         </scene>
     </scenes>
     <resources>
@@ -374,6 +384,7 @@
         <image name="schedule_tab_icon" width="19" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xi1-YC-42u"/>
+        <segue reference="vnf-om-r2N"/>
+        <segue reference="XTd-Ow-RtL"/>
     </inferredMetricsTieBreakers>
 </document>

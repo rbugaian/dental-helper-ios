@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewAppointmentViewController.h"
 
 @interface PatientsViewController : UITableViewController
+
+@property (strong, nonatomic) NewAppointmentViewController *createAppointmentViewController;
+@property  BOOL selectionModeOn;
 
 @end

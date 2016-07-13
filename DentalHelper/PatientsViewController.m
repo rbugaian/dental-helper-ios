@@ -52,7 +52,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    _selectedPatient = [_patients objectAtIndex:indexPath.row];
+    if (_selectionModeOn) {
+        self.createAppointmentViewController.selectedPatient = [_patients objectAtIndex:indexPath.row];
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        _selectedPatient = [_patients objectAtIndex:indexPath.row];
+        [self performSegueWithIdentifier:@"ShowDetailsSegue" sender:self];
+    }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
