@@ -89,7 +89,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CPv-9N-QUB">
                             <connections>
-                                <segue destination="eML-o5-PxS" kind="show" id="P56-c4-l5I"/>
+                                <segue destination="Wbt-ir-piV" kind="show" id="I7y-GZ-TXh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,88 +104,103 @@
             <point key="canvasLocation" x="1531" y="-382"/>
         </scene>
         <!--New Appointment-->
-        <scene sceneID="Mhf-Lo-UAJ">
+        <scene sceneID="oVG-2O-PWi">
             <objects>
-                <viewController id="eML-o5-PxS" customClass="NewAppointmentViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rZT-hV-kKy"/>
-                        <viewControllerLayoutGuide type="bottom" id="6tj-sX-9mq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nlG-Cn-N6p">
+                <tableViewController id="Wbt-ir-piV" customClass="NewAppointmentViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vQI-xh-wrz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkV-FS-IFX">
-                                <rect key="frame" x="169" y="136" width="263" height="30"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Lc-BP-xeY">
-                                <rect key="frame" x="169" y="237" width="263" height="30"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-z4-kgw">
-                                <rect key="frame" x="169" y="107" width="263" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="263" id="2FW-i8-aNP"/>
-                                    <constraint firstAttribute="height" constant="21" id="Ovt-tf-l2E"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="START">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL4-xF-cFe">
-                                <rect key="frame" x="169" y="209" width="263" height="20"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="END">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.10588235294117647" green="0.38431372549019605" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="qtJ-z4-kgw" firstAttribute="centerX" secondItem="nlG-Cn-N6p" secondAttribute="centerX" id="0WQ-BJ-0xc"/>
-                            <constraint firstItem="2Lc-BP-xeY" firstAttribute="centerX" secondItem="nlG-Cn-N6p" secondAttribute="centerX" id="3kV-EZ-Xml"/>
-                            <constraint firstItem="qtJ-z4-kgw" firstAttribute="leading" secondItem="kkV-FS-IFX" secondAttribute="leading" id="GdO-Yy-bWu"/>
-                            <constraint firstItem="jL4-xF-cFe" firstAttribute="leading" secondItem="2Lc-BP-xeY" secondAttribute="leading" id="HzX-Qg-a54"/>
-                            <constraint firstItem="kkV-FS-IFX" firstAttribute="leading" secondItem="jL4-xF-cFe" secondAttribute="leading" id="Llk-UQ-REd"/>
-                            <constraint firstItem="jL4-xF-cFe" firstAttribute="centerX" secondItem="nlG-Cn-N6p" secondAttribute="centerX" id="LtR-Yv-9dh"/>
-                            <constraint firstItem="jL4-xF-cFe" firstAttribute="top" secondItem="kkV-FS-IFX" secondAttribute="bottom" constant="43" id="T5L-up-hRR"/>
-                            <constraint firstItem="kkV-FS-IFX" firstAttribute="centerX" secondItem="nlG-Cn-N6p" secondAttribute="centerX" id="gaI-nd-WcD"/>
-                            <constraint firstItem="kkV-FS-IFX" firstAttribute="top" secondItem="qtJ-z4-kgw" secondAttribute="bottom" constant="8" symbolic="YES" id="nWZ-7f-As4"/>
-                            <constraint firstItem="qtJ-z4-kgw" firstAttribute="top" secondItem="rZT-hV-kKy" secondAttribute="bottom" constant="43" id="rBu-Sz-GG9"/>
-                            <constraint firstItem="2Lc-BP-xeY" firstAttribute="top" secondItem="jL4-xF-cFe" secondAttribute="bottom" constant="8" symbolic="YES" id="ur0-ph-GYO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="New Appointment" id="jcQ-Ae-h4y">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="iny-IZ-Ehl">
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Patient" id="tgo-5S-TaJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="UXg-hA-L1N" style="IBUITableViewCellStyleDefault" id="If3-Y0-b21">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="If3-Y0-b21" id="DX8-Z7-2H5">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Patient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UXg-hA-L1N">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Schedule" id="mKd-Nx-6ng" userLabel="Schedule">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="29D-mP-I8c">
+                                        <rect key="frame" x="0.0" y="209" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="29D-mP-I8c" id="P2P-lB-U0m">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5Z-Pl-rid">
+                                                    <rect key="frame" x="13" y="9" width="574" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="O5Z-Pl-rid" secondAttribute="trailing" constant="5" id="5G3-dX-ozF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="O5Z-Pl-rid" secondAttribute="bottom" constant="1" id="I4O-Tg-JF1"/>
+                                                <constraint firstItem="O5Z-Pl-rid" firstAttribute="top" secondItem="P2P-lB-U0m" secondAttribute="topMargin" constant="1" id="Ixg-Kv-tpT"/>
+                                                <constraint firstItem="O5Z-Pl-rid" firstAttribute="leading" secondItem="P2P-lB-U0m" secondAttribute="leadingMargin" constant="5" id="jwX-46-7D8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gSk-HJ-loh">
+                                        <rect key="frame" x="0.0" y="253" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gSk-HJ-loh" id="htG-lt-1TA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RN1-sN-fha">
+                                                    <rect key="frame" x="13" y="9" width="574" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RN1-sN-fha" firstAttribute="leading" secondItem="htG-lt-1TA" secondAttribute="leadingMargin" constant="5" id="6mG-a5-yYY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RN1-sN-fha" secondAttribute="trailing" constant="5" id="EFS-XM-8rI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="RN1-sN-fha" secondAttribute="bottom" constant="1" id="Njw-ge-Epj"/>
+                                                <constraint firstItem="RN1-sN-fha" firstAttribute="top" secondItem="htG-lt-1TA" secondAttribute="topMargin" constant="1" id="cgh-bw-VXz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Wbt-ir-piV" id="oZM-nv-noH"/>
+                            <outlet property="delegate" destination="Wbt-ir-piV" id="9I3-7Z-wlY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="New Appointment" id="Jj7-fp-LvQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gt9-jg-f4l">
                             <connections>
-                                <action selector="onDonePressed:" destination="eML-o5-PxS" id="M14-qh-UNH"/>
+                                <action selector="onDonePressed:" destination="Wbt-ir-piV" id="GjN-IJ-UqW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="endDateField" destination="2Lc-BP-xeY" id="W5F-1a-fj0"/>
-                        <outlet property="startDateField" destination="kkV-FS-IFX" id="xSz-T6-ttp"/>
+                        <outlet property="endDateField" destination="RN1-sN-fha" id="blI-eQ-Wjb"/>
+                        <outlet property="startDateField" destination="O5Z-Pl-rid" id="yLn-Ns-Ta6"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VBj-cg-iZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqc-kM-0fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2274" y="-382"/>
+            <point key="canvasLocation" x="2247" y="-382"/>
         </scene>
         <!--Patients-->
         <scene sceneID="4ns-De-95v">
@@ -359,6 +374,6 @@
         <image name="schedule_tab_icon" width="19" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vCP-iU-K5O"/>
+        <segue reference="Xi1-YC-42u"/>
     </inferredMetricsTieBreakers>
 </document>

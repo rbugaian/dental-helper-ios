@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewAppointmentViewController : UIViewController
+@interface NewAppointmentViewController : UITableViewController
 
 @property IBOutlet UITextField *startDateField;
 @property IBOutlet UITextField *endDateField;
