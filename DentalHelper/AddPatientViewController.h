@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Patient.h"
 
-@interface AddPatientViewController : UITableViewController <UITextFieldDelegate>
+@interface AddPatientViewController : UITableViewController <UITextFieldDelegate, UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;

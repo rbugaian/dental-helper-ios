@@ -66,6 +66,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="notesTextView" destination="pYd-h0-1gV" id="jja-Ef-9pV"/>
+                        <outlet property="saveButton" destination="cKc-wG-a08" id="uXs-ZL-AaW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIx-r7-LPq" userLabel="First Responder" sceneMemberID="firstResponder"/>

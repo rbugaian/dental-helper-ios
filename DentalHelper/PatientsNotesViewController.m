@@ -10,12 +10,15 @@
 
 @interface PatientsNotesViewController ()
 
+@property BOOL editModeOn;
+
 @end
 
 @implementation PatientsNotesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _editModeOn = NO;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWasShown:)
@@ -24,8 +27,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillBeHidden:)
                                                  name:UIKeyboardWillHideNotification object:nil];
-
-    // Do any additional setup after loading the view.
 }
 
 - (void)keyboardWasShown:(NSNotification*)notification {
@@ -41,17 +42,60 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [self.saveButton setTintColor:[UIColor redColor]];
+    self.saveButton.title = @"Edit";
+    self.saveButton.style = UIBarButtonItemStylePlain;
+    self.notesTextView.editable = NO;
+    
+//    if (self.addPatientViewController.editModeOn) {
+//        self.saveButton.enabled = YES;
+//        self.notesTextView.editable = YES;
+//    } else {
+//        self.saveButton.enabled = NO;
+//        self.notesTextView.editable = NO;
+//    }
+    
     if (self.addPatientViewController.patient != nil) {
         self.notesTextView.text = self.addPatientViewController.patient.notes;
     }
 }
 
 - (void)onSaveTap:(id)sender {
-    [self.notesTextView resignFirstResponder];
+    if (_editModeOn) {
+        [self.notesTextView resignFirstResponder];
+        
+        Patient *patient = self.addPatientViewController.patient;
+        [[RLMRealm defaultRealm] beginWriteTransaction];
+        
+        patient.notes = self.notesTextView.text;
+        
+        [[RLMRealm defaultRealm] addOrUpdateObject:patient];
+        [[RLMRealm defaultRealm] commitWriteTransaction];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        _editModeOn = YES;
+        self.saveButton.title = @"Save";
+        self.saveButton.tintColor = self.view.tintColor;
+        self.saveButton.style = UIBarButtonItemStyleDone;
+        self.notesTextView.editable = YES;
+        [self.notesTextView becomeFirstResponder];
+
+    }
     
-    self.addPatientViewController.patientsNotes = self.notesTextView.text;
+    //[self.notesTextView resignFirstResponder];
     
-    [self.navigationController popViewControllerAnimated:YES];
+    
+//    self.addPatientViewController.patientsNotes = self.notesTextView.text;
+//    Patient *patient = self.addPatientViewController.patient;
+//    [[RLMRealm defaultRealm] beginWriteTransaction];
+//    
+//    patient.notes = self.notesTextView.text;
+//    
+//    [[RLMRealm defaultRealm] addOrUpdateObject:patient];
+//    [[RLMRealm defaultRealm] commitWriteTransaction];
+//    
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

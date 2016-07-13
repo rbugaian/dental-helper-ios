@@ -73,27 +73,32 @@
         self.mobilePhoneField.enabled = NO;
         self.telephoneField.enabled = NO;
         self.emailField.enabled = NO;
-        
-        self.notesTextView.text = self.patient.notes;
-        [self.notesTextView sizeToFit]; //added
-        [self.notesTextView layoutIfNeeded]; //added
-        
-        [self.tableView sizeToFit];
-        [self.tableView layoutIfNeeded];
-        
-        self.tableView.tableFooterView = self.notesTextView;
-
-        
     }
     
     [self.tableView reloadData];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if (self.editModeOn) {
-        return 3;
-    } else {
-        return 2;
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return 3;
+            break;
+            
+        case 1:
+            return 3;
+            break;
+        
+        case 2:
+            if (_editModeOn) {
+                return 1;
+            } else {
+                return 2;
+            }
+            
+        default:
+            return 0;
+            break;
     }
 }
 
@@ -204,10 +209,6 @@
     
     if (self.emailField.text.length != 0) {
         self.patient.emailAddress = self.emailField.text;
-    }
-    
-    if (self.patientsNotes.length != 0) {
-        self.patient.notes = self.patientsNotes;
     }
     
     [[RLMRealm defaultRealm] addOrUpdateObject:self.patient];

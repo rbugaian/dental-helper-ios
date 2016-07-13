@@ -94,6 +94,7 @@
         AddPatientViewController *viewController  = segue.destinationViewController;
         viewController.editModeOn = NO;
         viewController.patient = _selectedPatient;
+        viewController.navigationItem.title = @"Patient";
     }
 }
 

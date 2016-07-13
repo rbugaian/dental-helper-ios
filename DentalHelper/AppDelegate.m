@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Realm/Realm.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     return YES;
 }
 
@@ -40,6 +42,28 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)migrateSchema {
+    //Performing migration
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    config.schemaVersion = 1;
+    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion) {
+        // We haven’t migrated anything yet, so oldSchemaVersion == 0
+        if (oldSchemaVersion < 1) {
+            // The enumerateObjects:block: method iterates
+            // over every 'Person' object stored in the Realm file
+//            [migration enumerateObjects:Pati.className
+//                                  block:^(RLMObject *oldObject, RLMObject *newObject) {
+//                                      
+//                                      // combine name fields into a single field
+//                                      newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@",
+//                                                                oldObject[@"firstName"],
+//                                                                oldObject[@"lastName"]];
+//                                  }];
+        }
+    };
+    [RLMRealmConfiguration setDefaultConfiguration:config];
 }
 
 @end

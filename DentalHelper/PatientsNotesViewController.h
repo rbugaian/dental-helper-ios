@@ -15,6 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *notesTextView;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+
 - (IBAction)onSaveTap:(id)sender;
 
 @end
