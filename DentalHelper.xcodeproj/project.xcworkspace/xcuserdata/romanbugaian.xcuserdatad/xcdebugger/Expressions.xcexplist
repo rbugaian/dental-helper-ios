@@ -6,10 +6,21 @@
          contextName = "-[ScheduleViewController reloadScheduleForDate:]:ScheduleViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+               value = "appointment.startDate">
             </PersistentString>
             <PersistentString
-               value = "appointment.startDate">
+               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AddPatientViewController saveExistingPatient]:AddPatientViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_patient.notes">
+            </PersistentString>
+            <PersistentString
+               value = "self.patientsNotes">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -21,6 +32,34 @@
             </PersistentString>
             <PersistentString
                value = "(NSArray*)self.childViewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AddPatientViewController initTextFields]:AddPatientViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.notesTextView.text">
+            </PersistentString>
+            <PersistentString
+               value = "self.patient.notes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PatientsNotesViewController onSaveTap:]:PatientsNotesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.notesTextView.text">
+            </PersistentString>
+            <PersistentString
+               value = "self.notesTextView.text.length">
+            </PersistentString>
+            <PersistentString
+               value = "self.addPatientViewController">
+            </PersistentString>
+            <PersistentString
+               value = "self.addPatientViewController.patientsNotes">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

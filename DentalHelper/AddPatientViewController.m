@@ -52,6 +52,10 @@
         self.birthDateField.inputAccessoryView = self.nextButtonToolbar;
         self.mobilePhoneField.inputAccessoryView = self.nextButtonToolbar;
         self.telephoneField.inputAccessoryView = self.nextButtonToolbar;
+        
+        self.notesTextView.text = nil;
+        self.tableView.tableFooterView = nil;
+        
     } else if (self.patient != nil) {
         self.rightBarButton.title = @"Edit";
         self.rightBarButton.tintColor = [UIColor redColor];
@@ -69,6 +73,27 @@
         self.mobilePhoneField.enabled = NO;
         self.telephoneField.enabled = NO;
         self.emailField.enabled = NO;
+        
+        self.notesTextView.text = self.patient.notes;
+        [self.notesTextView sizeToFit]; //added
+        [self.notesTextView layoutIfNeeded]; //added
+        
+        [self.tableView sizeToFit];
+        [self.tableView layoutIfNeeded];
+        
+        self.tableView.tableFooterView = self.notesTextView;
+
+        
+    }
+    
+    [self.tableView reloadData];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (self.editModeOn) {
+        return 3;
+    } else {
+        return 2;
     }
 }
 
@@ -185,7 +210,7 @@
         self.patient.notes = self.patientsNotes;
     }
     
-    [[RLMRealm defaultRealm] addOrUpdateObject:_patient];
+    [[RLMRealm defaultRealm] addOrUpdateObject:self.patient];
     [[RLMRealm defaultRealm] commitWriteTransaction];
     
     return YES;

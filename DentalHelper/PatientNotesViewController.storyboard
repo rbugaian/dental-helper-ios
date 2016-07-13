@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -37,10 +38,10 @@
                                 <exclude reference="pYd-h0-1gV"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="6AZ-xK-6Rh"/>
                                 <exclude reference="3gY-NE-NC1"/>
                                 <exclude reference="gq2-En-ka1"/>
                                 <exclude reference="wab-RU-TwA"/>
-                                <exclude reference="6AZ-xK-6Rh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -48,10 +49,10 @@
                                 <include reference="pYd-h0-1gV"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="6AZ-xK-6Rh"/>
                                 <include reference="3gY-NE-NC1"/>
                                 <include reference="gq2-En-ka1"/>
                                 <include reference="wab-RU-TwA"/>
-                                <include reference="6AZ-xK-6Rh"/>
                             </mask>
                         </variation>
                     </view>

@@ -24,8 +24,9 @@
 @property Patient *patient;
 
 @property (weak, nonatomic) IBOutlet UIToolbar *nextButtonToolbar;
+@property (weak, nonatomic) IBOutlet UITextView *notesTextView;
 
-@property (weak, nonatomic) NSString *patientsNotes;
+@property (strong, nonatomic) NSString *patientsNotes;
 
 - (IBAction)onBirthDateNextTap:(id)sender;
 - (IBAction)onSaveTap:(id)sender;
