@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -45,7 +44,7 @@
         <!--Schedule-->
         <scene sceneID="9N7-Oy-j8Z">
             <objects>
-                <viewController id="kgX-1g-hmH" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="kgX-1g-hmH" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YBy-mr-fDw"/>
                         <viewControllerLayoutGuide type="bottom" id="NXq-zl-D9H"/>
@@ -144,7 +143,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Schedule" id="mKd-Nx-6ng" userLabel="Schedule">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="29D-mP-I8c">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="29D-mP-I8c">
                                         <rect key="frame" x="0.0" y="209" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="29D-mP-I8c" id="P2P-lB-U0m">
@@ -165,7 +164,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gSk-HJ-loh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="gSk-HJ-loh">
                                         <rect key="frame" x="0.0" y="253" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gSk-HJ-loh" id="htG-lt-1TA">
@@ -204,11 +203,25 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="endDateField" destination="RN1-sN-fha" id="blI-eQ-Wjb"/>
+                        <outlet property="nextButton" destination="WdL-JU-PkS" id="Ned-5I-fVB"/>
+                        <outlet property="nextButtonToolbar" destination="h1e-lX-wjJ" id="G4R-on-rtf"/>
                         <outlet property="patientFullNameLabel" destination="UXg-hA-L1N" id="8Em-oh-IWu"/>
                         <outlet property="startDateField" destination="O5Z-Pl-rid" id="yLn-Ns-Ta6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqc-kM-0fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="h1e-lX-wjJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Qd3-PE-GnN"/>
+                        <barButtonItem title="Next" id="WdL-JU-PkS">
+                            <connections>
+                                <action selector="nextButtonClicked:" destination="Wbt-ir-piV" id="TIa-vt-BLa"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
             </objects>
             <point key="canvasLocation" x="2667" y="-382"/>
         </scene>

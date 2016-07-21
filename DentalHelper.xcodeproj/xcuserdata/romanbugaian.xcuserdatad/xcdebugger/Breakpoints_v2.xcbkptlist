@@ -259,13 +259,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DentalHelper/NewAppointmentViewController.m"
-            timestampString = "490113585.806561"
+            filePath = "DentalHelper/CalendarViewController.m"
+            timestampString = "490807545.580156"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "-prepareForSegue:sender:"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-loadAppointments"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -275,13 +275,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DentalHelper/NewAppointmentViewController.m"
-            timestampString = "490113691.771467"
+            filePath = "DentalHelper/CalendarViewController.m"
+            timestampString = "490807663.731697"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "-viewWillAppear:"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-calendar:prepareDayView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

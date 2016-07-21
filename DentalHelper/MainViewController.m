@@ -6,18 +6,18 @@
 //  Copyright © 2016 Roman Bugaian. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MainViewController.h"
 #import "ScheduleViewController.h"
 #import "CalendarViewController.h"
 
-@interface FirstViewController ()
+@interface MainViewController ()
 
 @property CalendarViewController *calenderViewController;
 @property ScheduleViewController *scheduleViewController;
 
 @end
 
-@implementation FirstViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

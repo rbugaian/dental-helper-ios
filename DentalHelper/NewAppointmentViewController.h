@@ -17,6 +17,10 @@
 
 @property (strong, nonatomic) Patient *selectedPatient;
 
+@property (strong, nonatomic) IBOutlet UIToolbar *nextButtonToolbar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextButton;
+- (IBAction)nextButtonClicked:(id)sender;
+
 - (IBAction)onDonePressed:(id)sender;
 
 @end

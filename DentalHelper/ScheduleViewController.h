@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FirstViewController.h"
+#import "MainViewController.h"
 
 @interface ScheduleViewController : UIViewController
 

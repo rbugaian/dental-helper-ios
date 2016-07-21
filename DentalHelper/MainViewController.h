@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MainViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *calenderContainerView;
 @property (weak, nonatomic) IBOutlet UIView *scheduleContainerView;

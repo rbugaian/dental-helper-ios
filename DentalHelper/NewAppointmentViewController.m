@@ -17,12 +17,7 @@
     
     [self initStartDatePicker];
     [self initEndDatePicker];
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
-                                   initWithTarget:self
-                                   action:@selector(dismissKeyboard)];
-    
-    //[self.view addGestureRecognizer:tap];
+    [self initTextFieldsNextButtons];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -31,6 +26,11 @@
     if (_selectedPatient != nil) {
         _patientFullNameLabel.text = [NSString stringWithFormat:@"%@ %@", _selectedPatient.firstName, _selectedPatient.lastName];
     }
+}
+
+- (void)initTextFieldsNextButtons {
+    self.startDateField.inputAccessoryView = self.nextButtonToolbar;
+    self.endDateField.inputAccessoryView = self.nextButtonToolbar;
 }
 
 - (UIDatePicker *)createDatePickerInstance {
@@ -122,4 +122,13 @@
     }
 }
 
+- (IBAction)nextButtonClicked:(id)sender {
+    if (self.startDateField.isFirstResponder) {
+        self.nextButton.title = @"Done";
+        [self.endDateField becomeFirstResponder];
+    } else if (self.endDateField.isFirstResponder) {
+        self.nextButton.title = @"Next";
+        [self.endDateField resignFirstResponder];
+    }
+}
 @end

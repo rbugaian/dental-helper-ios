@@ -33,7 +33,7 @@
 		809FE0331D216EC300F8416B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE0321D216EC300F8416B /* Patient.m */; };
 		80EBD4521CC8160E003E4A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4511CC8160E003E4A5E /* main.m */; };
 		80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4541CC8160E003E4A5E /* AppDelegate.m */; };
-		80EBD4581CC8160E003E4A5E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4571CC8160E003E4A5E /* FirstViewController.m */; };
+		80EBD4581CC8160E003E4A5E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4571CC8160E003E4A5E /* MainViewController.m */; };
 		80EBD45B1CC8160E003E4A5E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD45A1CC8160E003E4A5E /* SecondViewController.m */; };
 		80EBD45E1CC8160E003E4A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EBD45C1CC8160E003E4A5E /* Main.storyboard */; };
 		80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EBD45F1CC8160E003E4A5E /* Assets.xcassets */; };
@@ -129,8 +129,8 @@
 		80EBD4511CC8160E003E4A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80EBD4531CC8160E003E4A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80EBD4541CC8160E003E4A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		80EBD4561CC8160E003E4A5E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		80EBD4571CC8160E003E4A5E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		80EBD4561CC8160E003E4A5E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		80EBD4571CC8160E003E4A5E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		80EBD4591CC8160E003E4A5E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		80EBD45A1CC8160E003E4A5E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		80EBD45D1CC8160E003E4A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -345,8 +345,8 @@
 				806301601CF4D5100041D307 /* Libs */,
 				80EBD4531CC8160E003E4A5E /* AppDelegate.h */,
 				80EBD4541CC8160E003E4A5E /* AppDelegate.m */,
-				80EBD4561CC8160E003E4A5E /* FirstViewController.h */,
-				80EBD4571CC8160E003E4A5E /* FirstViewController.m */,
+				80EBD4561CC8160E003E4A5E /* MainViewController.h */,
+				80EBD4571CC8160E003E4A5E /* MainViewController.m */,
 				80EBD4591CC8160E003E4A5E /* SecondViewController.h */,
 				80EBD45A1CC8160E003E4A5E /* SecondViewController.m */,
 				80EBD45C1CC8160E003E4A5E /* Main.storyboard */,
@@ -538,7 +538,7 @@
 				80FA30171CD24DE700B278E3 /* ScheduleViewController.m in Sources */,
 				809FE02C1D215CB300F8416B /* Utils.m in Sources */,
 				806301851CF4D5310041D307 /* JTCalendarManager.m in Sources */,
-				80EBD4581CC8160E003E4A5E /* FirstViewController.m in Sources */,
+				80EBD4581CC8160E003E4A5E /* MainViewController.m in Sources */,
 				8063015E1CF4D4C10041D307 /* CalendarViewController.m in Sources */,
 				809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */,
 				8063018C1CF4D5310041D307 /* JTCalendarPageView.m in Sources */,
