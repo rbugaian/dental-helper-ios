@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-@property (strong, nonatomic) FirstViewController *rootViewController;
+@property (strong, nonatomic) MainViewController *rootViewController;
 
 -(void)showScheduleForDay:(NSDate *)date;
 
