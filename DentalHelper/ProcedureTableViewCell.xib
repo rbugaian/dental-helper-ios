@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProcedureTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="ProcedureTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W96-c6-7ab">
+                        <rect key="frame" x="173" y="8" width="139" height="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="12 July 2016 on 17:33">
+                                <attributes>
+                                    <color key="NSColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbk-pG-GCt">
+                        <rect key="frame" x="16" y="40" width="288" height="19"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Tooth removal">
+                                <attributes>
+                                    <color key="NSColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsz-5K-ooH">
+                        <rect key="frame" x="16" y="16" width="153" height="20"/>
+                        <attributedString key="attributedText">
+                            <fragment content="John Smith">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.82829122340425532" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W96-c6-7ab" firstAttribute="leading" secondItem="Dsz-5K-ooH" secondAttribute="trailing" constant="4" id="6oK-Zz-RsR"/>
+                    <constraint firstItem="W96-c6-7ab" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9DU-sF-zyS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sbk-pG-GCt" secondAttribute="trailing" constant="8" id="HtC-XY-2D2"/>
+                    <constraint firstItem="Sbk-pG-GCt" firstAttribute="top" secondItem="Dsz-5K-ooH" secondAttribute="bottom" constant="4" id="NQw-Bm-2Ra"/>
+                    <constraint firstItem="Sbk-pG-GCt" firstAttribute="leading" secondItem="Dsz-5K-ooH" secondAttribute="leading" id="PtE-l9-11Z"/>
+                    <constraint firstItem="Dsz-5K-ooH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="aG4-4y-zkF"/>
+                    <constraint firstItem="Dsz-5K-ooH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="cZP-qA-nFY"/>
+                    <constraint firstItem="W96-c6-7ab" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="lOJ-nA-698"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="W96-c6-7ab" id="84V-vu-uCb"/>
+                <outlet property="patientNameLabel" destination="Dsz-5K-ooH" id="8ms-1O-ADE"/>
+                <outlet property="procedureTitle" destination="Sbk-pG-GCt" id="T2j-Xo-WgZ"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="375.5"/>
+        </tableViewCell>
+    </objects>
+</document>

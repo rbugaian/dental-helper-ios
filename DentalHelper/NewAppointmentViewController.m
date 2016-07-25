@@ -100,6 +100,7 @@
     Appointment *newAppointment = [[Appointment alloc] init];
     [newAppointment setStartDate:startDatePicker.date];
     [newAppointment setEndDate:endDatePicker.date];
+    [newAppointment setPatient:_selectedPatient];
     
     RLMRealm *realm = [RLMRealm defaultRealm];
     [realm transactionWithBlock:^{

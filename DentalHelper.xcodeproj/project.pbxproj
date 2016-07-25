@@ -26,6 +26,8 @@
 		8063018E1CF4D5310041D307 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301801CF4D5310041D307 /* JTCalendarWeekView.m */; };
 		8063018F1CF4D5310041D307 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */; };
 		806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301841CF4D5310041D307 /* JTVerticalCalendarView.m */; };
+		80759F171D462B5400BEF1B4 /* ProcedureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80759F151D462B5400BEF1B4 /* ProcedureTableViewCell.m */; };
+		80759F181D462B5400BEF1B4 /* ProcedureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80759F161D462B5400BEF1B4 /* ProcedureTableViewCell.xib */; };
 		80831A921D350BFF007D77C4 /* PatientsNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80831A911D350BFF007D77C4 /* PatientsNotesViewController.m */; };
 		80831A941D350C23007D77C4 /* PatientNotesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80831A931D350C23007D77C4 /* PatientNotesViewController.storyboard */; };
 		809FE02C1D215CB300F8416B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02B1D215CB300F8416B /* Utils.m */; };
@@ -118,6 +120,9 @@
 		806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
 		806301831CF4D5310041D307 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
 		806301841CF4D5310041D307 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		80759F141D462B5400BEF1B4 /* ProcedureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcedureTableViewCell.h; sourceTree = "<group>"; };
+		80759F151D462B5400BEF1B4 /* ProcedureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcedureTableViewCell.m; sourceTree = "<group>"; };
+		80759F161D462B5400BEF1B4 /* ProcedureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcedureTableViewCell.xib; sourceTree = "<group>"; };
 		80831A901D350BFF007D77C4 /* PatientsNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientsNotesViewController.h; sourceTree = "<group>"; };
 		80831A911D350BFF007D77C4 /* PatientsNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsNotesViewController.m; sourceTree = "<group>"; };
 		80831A931D350C23007D77C4 /* PatientNotesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PatientNotesViewController.storyboard; sourceTree = "<group>"; };
@@ -289,6 +294,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		80759F101D462B0900BEF1B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80759F141D462B5400BEF1B4 /* ProcedureTableViewCell.h */,
+				80759F151D462B5400BEF1B4 /* ProcedureTableViewCell.m */,
+				80759F161D462B5400BEF1B4 /* ProcedureTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		80831A8F1D350BDE007D77C4 /* PatientNotesViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +419,7 @@
 		80F4B9351D41379100481CD9 /* ProceduresViewController */ = {
 			isa = PBXGroup;
 			children = (
+				80759F101D462B0900BEF1B4 /* Cells */,
 				80F4B9361D4137C200481CD9 /* ProceduresTableViewController.h */,
 				80F4B9371D4137C200481CD9 /* ProceduresTableViewController.m */,
 				80F4B9391D4137D700481CD9 /* ProceduresTableViewController.storyboard */,
@@ -518,6 +534,7 @@
 			files = (
 				80EBD4631CC8160E003E4A5E /* LaunchScreen.storyboard in Resources */,
 				80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */,
+				80759F181D462B5400BEF1B4 /* ProcedureTableViewCell.xib in Resources */,
 				80F4B93A1D4137D700481CD9 /* ProceduresTableViewController.storyboard in Resources */,
 				80831A941D350C23007D77C4 /* PatientNotesViewController.storyboard in Resources */,
 				80EBD45E1CC8160E003E4A5E /* Main.storyboard in Resources */,
@@ -552,6 +569,7 @@
 				80F4B9381D4137C200481CD9 /* ProceduresTableViewController.m in Sources */,
 				806301861CF4D5310041D307 /* JTCalendarSettings.m in Sources */,
 				806301881CF4D5310041D307 /* JTCalendarDelegateManager.m in Sources */,
+				80759F171D462B5400BEF1B4 /* ProcedureTableViewCell.m in Sources */,
 				8063018A1CF4D5310041D307 /* JTCalendarDayView.m in Sources */,
 				8015BB241CF599C50044E47C /* NewAppointmentViewController.m in Sources */,
 				8063018B1CF4D5310041D307 /* JTCalendarMenuView.m in Sources */,

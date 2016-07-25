@@ -13,6 +13,7 @@
 + (NSDate *)getLocalDate;
 + (NSDate *)getLocalDate:(NSDate *)sourceDate;
 + (NSString *)dateStringFromDate:(NSDate *)date;
++ (NSString *)dateStringFromDateWithTime:(NSDate *)date;
 
 
 @end

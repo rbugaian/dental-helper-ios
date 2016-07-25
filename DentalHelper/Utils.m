@@ -32,5 +32,8 @@
     return [dateFormatter stringFromDate:date];
 }
 
++ (NSString *)dateStringFromDateWithTime:(NSDate *)date {
+    return [NSDateFormatter localizedStringFromDate:date dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterShortStyle];
+}
 
 @end
