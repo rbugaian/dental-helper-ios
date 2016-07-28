@@ -18,6 +18,9 @@
     [self initStartDatePicker];
     [self initEndDatePicker];
     [self initTextFieldsNextButtons];
+    
+    [self.startDateField setDelegate:self];
+    [self.endDateField setDelegate:self];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -132,4 +135,16 @@
         [self.endDateField resignFirstResponder];
     }
 }
+
+- (BOOL) textFieldShouldBeginEditing:(UITextField *)textField {
+    if (textField == self.startDateField) {
+        self.nextButton.title = @"Next";
+    } else {
+        self.nextButton.title = @"Done";
+    }
+    
+    return YES;
+}
+
+
 @end

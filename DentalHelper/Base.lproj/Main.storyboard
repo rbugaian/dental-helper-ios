@@ -111,7 +111,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vQI-xh-wrz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Patient" id="tgo-5S-TaJ">
                                 <cells>
@@ -289,11 +289,11 @@
             </objects>
             <point key="canvasLocation" x="2371.5" y="1678"/>
         </scene>
-        <!--Procedures-->
+        <!--Appointments-->
         <scene sceneID="BaE-aq-yLy">
             <objects>
                 <navigationController id="Mac-E4-qc6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Procedures" image="tooth_tab_icon" id="OXv-pU-i5z"/>
+                    <tabBarItem key="tabBarItem" title="Appointments" image="tooth_tab_icon" id="OXv-pU-i5z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="317-8s-WkC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -306,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="766"/>
         </scene>
-        <!--ProceduresTableViewController-->
+        <!--AppointmentsTableViewController-->
         <scene sceneID="ojt-Df-ljK">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProceduresTableViewController" id="SxD-Dn-dcX" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AppointmentsTableViewController" id="SxD-Dn-dcX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="AAk-Vv-BV6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRK-tp-3yw" userLabel="First Responder" sceneMemberID="firstResponder"/>

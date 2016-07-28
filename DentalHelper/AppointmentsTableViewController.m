@@ -6,19 +6,23 @@
 //  Copyright © 2016 Roman Bugaian. All rights reserved.
 //
 
-#import "ProceduresTableViewController.h"
+#import "AppointmentsTableViewController.h"
 #import "ProcedureTableViewCell.h"
 #import <Realm/Realm.h>
 #import "Appointment.h"
 #import "Utils.h"
+#import "RBAppointmentDetailsViewController.h"
 
-@interface ProceduresTableViewController ()
 
-@property RLMResults *procedures;
+@interface AppointmentsTableViewController ()
+
+@property (nonatomic) RLMResults *procedures;
+@property (nonatomic) Appointment *selectedAppointment;
 
 @end
 
-@implementation ProceduresTableViewController
+
+@implementation AppointmentsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,6 +56,19 @@
     cell.procedureTitle.text = @"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _selectedAppointment = [_procedures objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"AppointmentShowDetails" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"AppointmentShowDetails"]) {
+        RBAppointmentDetailsViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.appointment = _selectedAppointment;
+    }
 }
 
 @end

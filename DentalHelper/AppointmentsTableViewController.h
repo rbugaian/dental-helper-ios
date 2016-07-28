@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProceduresTableViewController : UITableViewController
+@interface AppointmentsTableViewController : UITableViewController
+
 
 @end

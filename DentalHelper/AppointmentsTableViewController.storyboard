@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Procedures-->
+        <!--Appointments-->
         <scene sceneID="N0J-F9-Qb7">
             <objects>
-                <tableViewController id="kDJ-Jw-CsP" customClass="ProceduresTableViewController" sceneMemberID="viewController">
+                <tableViewController id="kDJ-Jw-CsP" customClass="AppointmentsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" id="gjk-z0-JAQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,12 +28,23 @@
                             <outlet property="delegate" destination="kDJ-Jw-CsP" id="ojw-IY-Ts3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Procedures" id="bHa-p4-iV9"/>
+                    <navigationItem key="navigationItem" title="Appointments" id="bHa-p4-iV9"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="2vv-rW-7sL" kind="show" identifier="AppointmentShowDetails" id="cas-j7-CW3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khI-j0-V6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="259" y="412"/>
+        </scene>
+        <!--RBAppointmentDetailsViewController-->
+        <scene sceneID="6Cq-05-z8z">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RBAppointmentDetailsViewController" storyboardName="RBAppointmentDetailsViewController" id="2vv-rW-7sL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tq8-yg-Nhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.5" y="368"/>
         </scene>
     </scenes>
 </document>

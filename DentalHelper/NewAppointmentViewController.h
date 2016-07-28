@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Patient.h"
 
-@interface NewAppointmentViewController : UITableViewController
+@interface NewAppointmentViewController : UITableViewController <UITextFieldDelegate>
 
 @property IBOutlet UILabel *patientFullNameLabel;
 @property IBOutlet UITextField *startDateField;

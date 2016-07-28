@@ -6,10 +6,10 @@
          contextName = "-[ScheduleViewController reloadScheduleForDate:]:ScheduleViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "appointment.startDate">
+               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
             </PersistentString>
             <PersistentString
-               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+               value = "appointment.startDate">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -60,6 +60,14 @@
             </PersistentString>
             <PersistentString
                value = "self.addPatientViewController.patientsNotes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProceduresViewControllerUITests testAppointmentCreation]:ProceduresViewControllerUITests.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(NSString *)[[[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeTextView].element value]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
