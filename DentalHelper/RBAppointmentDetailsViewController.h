@@ -11,6 +11,9 @@
 
 @interface RBAppointmentDetailsViewController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *patientName;
+@property (weak, nonatomic) IBOutlet UILabel *date;
+
 @property (strong, nonatomic) Appointment *appointment;
 
 @end
