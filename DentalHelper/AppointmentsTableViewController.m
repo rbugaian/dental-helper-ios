@@ -67,6 +67,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"AppointmentShowDetails"]) {
         RBAppointmentDetailsViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.hidesBottomBarWhenPushed = YES;
+
         destinationViewController.appointment = _selectedAppointment;
     }
 }

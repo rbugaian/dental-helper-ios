@@ -28,7 +28,9 @@
                             <outlet property="delegate" destination="kDJ-Jw-CsP" id="ojw-IY-Ts3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Appointments" id="bHa-p4-iV9"/>
+                    <navigationItem key="navigationItem" title="Appointments" id="bHa-p4-iV9">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BWO-Be-aoI"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="2vv-rW-7sL" kind="show" identifier="AppointmentShowDetails" id="cas-j7-CW3"/>

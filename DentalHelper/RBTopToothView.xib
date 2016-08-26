@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RBTopToothView">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tooth_side_view_top" translatesAutoresizingMaskIntoConstraints="NO" id="jxm-Yw-aZP">
+                    <rect key="frame" x="12" y="8" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="4sF-1h-zMc"/>
+                        <constraint firstAttribute="width" constant="50" id="9s5-Gn-2Ky"/>
+                        <constraint firstAttribute="height" constant="50" id="NSX-Kg-gT8"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4sF-1h-zMc"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tooth_top_view" translatesAutoresizingMaskIntoConstraints="NO" id="sNo-fb-S6j">
+                    <rect key="frame" x="12" y="67" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="KX0-A5-JoF"/>
+                        <constraint firstAttribute="height" constant="50" id="KXU-sb-ygd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V57-Ie-vGs">
+                    <rect key="frame" x="16" y="137" width="42" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF1-y3-sMF">
+                    <rect key="frame" x="0.0" y="130" width="74" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="s3h-Sj-Oy6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.50196078431372548" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="sNo-fb-S6j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3cu-7j-AnA"/>
+                <constraint firstItem="bF1-y3-sMF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="758-VT-o5M"/>
+                <constraint firstAttribute="bottom" secondItem="V57-Ie-vGs" secondAttribute="bottom" constant="8" id="I01-Lo-lJn"/>
+                <constraint firstAttribute="trailing" secondItem="bF1-y3-sMF" secondAttribute="trailing" id="M7W-Pb-ZLq"/>
+                <constraint firstItem="jxm-Yw-aZP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ozk-xP-Ilh"/>
+                <constraint firstItem="bF1-y3-sMF" firstAttribute="top" secondItem="sNo-fb-S6j" secondAttribute="bottom" constant="13" id="S4I-hd-58M"/>
+                <constraint firstItem="sNo-fb-S6j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="b4u-Ta-Kqa"/>
+                <constraint firstItem="sNo-fb-S6j" firstAttribute="top" secondItem="jxm-Yw-aZP" secondAttribute="bottom" constant="9" id="kF6-MB-Liz"/>
+                <constraint firstAttribute="trailing" secondItem="sNo-fb-S6j" secondAttribute="trailing" constant="12" id="mq6-yF-XF3"/>
+                <constraint firstItem="V57-Ie-vGs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nJy-O6-MMz"/>
+                <constraint firstItem="jxm-Yw-aZP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tLy-Wf-YNI"/>
+                <constraint firstItem="V57-Ie-vGs" firstAttribute="top" secondItem="bF1-y3-sMF" secondAttribute="bottom" constant="4" id="umt-hU-KQp"/>
+                <constraint firstItem="V57-Ie-vGs" firstAttribute="top" secondItem="sNo-fb-S6j" secondAttribute="bottom" constant="8" id="zg7-xp-F1v"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="zg7-xp-F1v"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="toothNumber" destination="V57-Ie-vGs" id="aJA-IF-gFw"/>
+                <outlet property="toothRootView" destination="jxm-Yw-aZP" id="Jus-uo-uWq"/>
+                <outlet property="toothTopView" destination="sNo-fb-S6j" id="MLR-dA-914"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="126.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tooth_side_view_top" width="24" height="25"/>
+        <image name="tooth_top_view" width="25" height="25"/>
+    </resources>
+</document>

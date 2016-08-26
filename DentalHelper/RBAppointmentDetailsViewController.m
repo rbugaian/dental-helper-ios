@@ -7,6 +7,7 @@
 //
 
 #import "RBAppointmentDetailsViewController.h"
+#import "Utils.h"
 
 @interface RBAppointmentDetailsViewController ()
 
@@ -16,22 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initViews];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initViews {
+    _date.text = [Utils dateStringFromDateWithTime:_appointment.startDate];
+    _patientName.text = [NSString stringWithFormat:@"%@ %@", _appointment.patient.firstName, _appointment.patient.lastName];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 2) {
+        NSLog(@"Selected");
+        [self performSegueWithIdentifier:@"ShowProcedureChart" sender:self];
+    }
 }
-*/
 
 @end

@@ -37,7 +37,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Date" id="ayb-N2-EAI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eQJ-rX-U4Q" style="IBUITableViewCellStyleDefault" id="zv9-jJ-1Y8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="eQJ-rX-U4Q" style="IBUITableViewCellStyleDefault" id="zv9-jJ-1Y8">
                                         <rect key="frame" x="0.0" y="209" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zv9-jJ-1Y8" id="W4A-hm-gYu">
@@ -146,11 +146,20 @@
                     <connections>
                         <outlet property="date" destination="eQJ-rX-U4Q" id="Y1a-xp-U4e"/>
                         <outlet property="patientName" destination="9M3-Gb-p9A" id="0bL-EO-L0a"/>
+                        <segue destination="PJP-Nw-JIj" kind="show" identifier="ShowProcedureChart" id="DlC-2y-AZb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImY-sq-gGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="231" y="416"/>
+        </scene>
+        <!--RBDentalChartViewController-->
+        <scene sceneID="a86-Oh-5iG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RBDentalChartViewController" id="PJP-Nw-JIj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpd-sN-C6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="429"/>
         </scene>
     </scenes>
 </document>

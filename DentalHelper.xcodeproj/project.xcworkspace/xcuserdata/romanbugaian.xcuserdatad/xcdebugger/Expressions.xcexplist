@@ -6,10 +6,10 @@
          contextName = "-[ScheduleViewController reloadScheduleForDate:]:ScheduleViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+               value = "appointment.startDate">
             </PersistentString>
             <PersistentString
-               value = "appointment.startDate">
+               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -36,13 +36,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[AddPatientViewController initTextFields]:AddPatientViewController.m">
+         contextName = "-[ProceduresViewControllerUITests testAppointmentCreation]:ProceduresViewControllerUITests.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.notesTextView.text">
+               value = "(NSString *)[[[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeTextView].element value]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBDentalChartViewController viewDidLoad]:RBDentalChartViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.window.frame.size.height">
             </PersistentString>
             <PersistentString
-               value = "self.patient.notes">
+               value = "_chartHolderView.frame.size.height">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBDentalChartViewController scrollViewDidEndZooming:withView:atScale:]:RBDentalChartViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.size.height">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -64,10 +83,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[ProceduresViewControllerUITests testAppointmentCreation]:ProceduresViewControllerUITests.m">
+         contextName = "-[AddPatientViewController initTextFields]:AddPatientViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "(NSString *)[[[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeTextView].element value]">
+               value = "self.notesTextView.text">
+            </PersistentString>
+            <PersistentString
+               value = "self.patient.notes">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8010DC6F1D4FDB51004093F1 /* RBDentalChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8010DC6E1D4FDB51004093F1 /* RBDentalChartViewController.m */; };
+		8010DC711D4FDB60004093F1 /* RBDentalChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8010DC701D4FDB60004093F1 /* RBDentalChartViewController.storyboard */; };
+		8010DC7A1D4FDC63004093F1 /* RBTopToothView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8010DC791D4FDC63004093F1 /* RBTopToothView.m */; };
+		8010DC7C1D4FDC6E004093F1 /* RBTopToothView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8010DC7B1D4FDC6E004093F1 /* RBTopToothView.xib */; };
 		8015BB201CF5976A0044E47C /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8015BB1F1CF5976A0044E47C /* Appointment.m */; };
 		8015BB241CF599C50044E47C /* NewAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8015BB231CF599C50044E47C /* NewAppointmentViewController.m */; };
 		8016E1621D4A8B9300D760DF /* RBAppointmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016E1611D4A8B9300D760DF /* RBAppointmentDetailsViewController.m */; };
@@ -38,6 +42,8 @@
 		809FE02C1D215CB300F8416B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02B1D215CB300F8416B /* Utils.m */; };
 		809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE02F1D216D9E00F8416B /* PatientsViewController.m */; };
 		809FE0331D216EC300F8416B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 809FE0321D216EC300F8416B /* Patient.m */; };
+		80A1C7471D67513B004FD4C7 /* RBBottomToothView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A1C7461D67513B004FD4C7 /* RBBottomToothView.m */; };
+		80A1C7491D67514E004FD4C7 /* RBBottomToothView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A1C7481D67514E004FD4C7 /* RBBottomToothView.xib */; };
 		80EBD4521CC8160E003E4A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4511CC8160E003E4A5E /* main.m */; };
 		80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4541CC8160E003E4A5E /* AppDelegate.m */; };
 		80EBD4581CC8160E003E4A5E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBD4571CC8160E003E4A5E /* MainViewController.m */; };
@@ -84,6 +90,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8010DC6D1D4FDB51004093F1 /* RBDentalChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBDentalChartViewController.h; sourceTree = "<group>"; };
+		8010DC6E1D4FDB51004093F1 /* RBDentalChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBDentalChartViewController.m; sourceTree = "<group>"; };
+		8010DC701D4FDB60004093F1 /* RBDentalChartViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RBDentalChartViewController.storyboard; sourceTree = "<group>"; };
+		8010DC781D4FDC63004093F1 /* RBTopToothView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTopToothView.h; sourceTree = "<group>"; };
+		8010DC791D4FDC63004093F1 /* RBTopToothView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTopToothView.m; sourceTree = "<group>"; };
+		8010DC7B1D4FDC6E004093F1 /* RBTopToothView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTopToothView.xib; sourceTree = "<group>"; };
 		8015BB1E1CF5976A0044E47C /* Appointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Appointment.h; path = Assets.xcassets/Appointment.h; sourceTree = "<group>"; };
 		8015BB1F1CF5976A0044E47C /* Appointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Appointment.m; path = Assets.xcassets/Appointment.m; sourceTree = "<group>"; };
 		8015BB221CF599C50044E47C /* NewAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAppointmentViewController.h; sourceTree = "<group>"; };
@@ -142,6 +154,9 @@
 		809FE02F1D216D9E00F8416B /* PatientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientsViewController.m; sourceTree = "<group>"; };
 		809FE0311D216EC300F8416B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		809FE0321D216EC300F8416B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		80A1C7451D67513B004FD4C7 /* RBBottomToothView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBottomToothView.h; sourceTree = "<group>"; };
+		80A1C7461D67513B004FD4C7 /* RBBottomToothView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBottomToothView.m; sourceTree = "<group>"; };
+		80A1C7481D67514E004FD4C7 /* RBBottomToothView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBBottomToothView.xib; sourceTree = "<group>"; };
 		80EBD44D1CC8160E003E4A5E /* DentalHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DentalHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EBD4511CC8160E003E4A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80EBD4531CC8160E003E4A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +210,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8010DC6C1D4FDB18004093F1 /* DentalChart */ = {
+			isa = PBXGroup;
+			children = (
+				8010DC741D4FDC36004093F1 /* ToothView */,
+				8010DC6D1D4FDB51004093F1 /* RBDentalChartViewController.h */,
+				8010DC6E1D4FDB51004093F1 /* RBDentalChartViewController.m */,
+				8010DC701D4FDB60004093F1 /* RBDentalChartViewController.storyboard */,
+			);
+			name = DentalChart;
+			sourceTree = "<group>";
+		};
+		8010DC741D4FDC36004093F1 /* ToothView */ = {
+			isa = PBXGroup;
+			children = (
+				8010DC7E1D4FDE1B004093F1 /* Bottom */,
+				8010DC7D1D4FDE12004093F1 /* Top */,
+			);
+			name = ToothView;
+			sourceTree = "<group>";
+		};
+		8010DC7D1D4FDE12004093F1 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				8010DC781D4FDC63004093F1 /* RBTopToothView.h */,
+				8010DC791D4FDC63004093F1 /* RBTopToothView.m */,
+				8010DC7B1D4FDC6E004093F1 /* RBTopToothView.xib */,
+			);
+			name = Top;
+			sourceTree = "<group>";
+		};
+		8010DC7E1D4FDE1B004093F1 /* Bottom */ = {
+			isa = PBXGroup;
+			children = (
+				80A1C7451D67513B004FD4C7 /* RBBottomToothView.h */,
+				80A1C7461D67513B004FD4C7 /* RBBottomToothView.m */,
+				80A1C7481D67514E004FD4C7 /* RBBottomToothView.xib */,
+			);
+			name = Bottom;
+			sourceTree = "<group>";
+		};
 		8015BB1D1CF597340044E47C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +447,8 @@
 		80EBD44F1CC8160E003E4A5E /* DentalHelper */ = {
 			isa = PBXGroup;
 			children = (
+				8016E15D1D4A849900D760DF /* Procedure */,
+				8010DC6C1D4FDB18004093F1 /* DentalChart */,
 				80F4B9341D41378900481CD9 /* Appointment */,
 				80831A8F1D350BDE007D77C4 /* PatientNotesViewController */,
 				803F7FE51D21C0B800D5EE4B /* AddPatientViewController */,
@@ -450,7 +507,6 @@
 			isa = PBXGroup;
 			children = (
 				8016E15F1D4A84BA00D760DF /* AppointmentDetailsViewController */,
-				8016E15D1D4A849900D760DF /* Procedure */,
 				80F4B9351D41379100481CD9 /* AppointmentsViewController */,
 			);
 			name = Appointment;
@@ -572,8 +628,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8010DC711D4FDB60004093F1 /* RBDentalChartViewController.storyboard in Resources */,
 				80EBD4631CC8160E003E4A5E /* LaunchScreen.storyboard in Resources */,
+				80A1C7491D67514E004FD4C7 /* RBBottomToothView.xib in Resources */,
 				80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */,
+				8010DC7C1D4FDC6E004093F1 /* RBTopToothView.xib in Resources */,
 				80759F181D462B5400BEF1B4 /* ProcedureTableViewCell.xib in Resources */,
 				80F4B93A1D4137D700481CD9 /* AppointmentsTableViewController.storyboard in Resources */,
 				8016E1641D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard in Resources */,
@@ -605,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806301871CF4D5310041D307 /* JTDateHelper.m in Sources */,
+				8010DC7A1D4FDC63004093F1 /* RBTopToothView.m in Sources */,
 				8015BB201CF5976A0044E47C /* Appointment.m in Sources */,
 				809FE0331D216EC300F8416B /* Patient.m in Sources */,
 				80F4B9381D4137C200481CD9 /* AppointmentsTableViewController.m in Sources */,
@@ -626,8 +686,10 @@
 				80EBD4581CC8160E003E4A5E /* MainViewController.m in Sources */,
 				8063015E1CF4D4C10041D307 /* CalendarViewController.m in Sources */,
 				809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */,
+				8010DC6F1D4FDB51004093F1 /* RBDentalChartViewController.m in Sources */,
 				8063018C1CF4D5310041D307 /* JTCalendarPageView.m in Sources */,
 				806301891CF4D5310041D307 /* JTCalendarScrollManager.m in Sources */,
+				80A1C7471D67513B004FD4C7 /* RBBottomToothView.m in Sources */,
 				8063018E1CF4D5310041D307 /* JTCalendarWeekView.m in Sources */,
 				80EBD4521CC8160E003E4A5E /* main.m in Sources */,
 				8063018F1CF4D5310041D307 /* JTHorizontalCalendarView.m in Sources */,
