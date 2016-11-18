@@ -18,6 +18,4 @@
 
 @property (strong, nonatomic) MainViewController *rootViewController;
 
-
-
 @end

@@ -46,15 +46,7 @@
     self.saveButton.title = @"Edit";
     self.saveButton.style = UIBarButtonItemStylePlain;
     self.notesTextView.editable = NO;
-    
-//    if (self.addPatientViewController.editModeOn) {
-//        self.saveButton.enabled = YES;
-//        self.notesTextView.editable = YES;
-//    } else {
-//        self.saveButton.enabled = NO;
-//        self.notesTextView.editable = NO;
-//    }
-    
+
     if (self.addPatientViewController.patient != nil) {
         self.notesTextView.text = self.addPatientViewController.patient.notes;
     }
@@ -82,20 +74,6 @@
         [self.notesTextView becomeFirstResponder];
 
     }
-    
-    //[self.notesTextView resignFirstResponder];
-    
-    
-//    self.addPatientViewController.patientsNotes = self.notesTextView.text;
-//    Patient *patient = self.addPatientViewController.patient;
-//    [[RLMRealm defaultRealm] beginWriteTransaction];
-//    
-//    patient.notes = self.notesTextView.text;
-//    
-//    [[RLMRealm defaultRealm] addOrUpdateObject:patient];
-//    [[RLMRealm defaultRealm] commitWriteTransaction];
-//    
-//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

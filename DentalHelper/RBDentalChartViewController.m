@@ -9,6 +9,7 @@
 #import "RBDentalChartViewController.h"
 #import "RBTopToothView.h"
 #import "RBBottomToothView.h"
+#import "RBScreenManager.h"
 
 @interface RBDentalChartViewController ()
 
@@ -77,8 +78,6 @@
                                          multiplier:1.0f
                                          constant:0.0f]];
     
-//    [_chartHolderView setBackgroundColor:[UIColor lightGrayColor]];
-    
     [self drawTopRow];
     [self drawBottomRow];
 }
@@ -139,8 +138,7 @@
 
     for (int i = 1; i < 16; i++) {
         RBTopToothView *view = [self loadTopToothView];
-//        [view.layer setCornerRadius:12.0f];
-//        view.translatesAutoresizingMaskIntoConstraints = NO;
+
         [self.chartHolderView addSubview:view];
         
         NSLayoutConstraint *view2Contstraint = [NSLayoutConstraint
@@ -166,6 +164,10 @@
         view.toothNumber.text = [teethNumbers objectAtIndex:i];
         
         initialTopToothView = view;
+        
+        UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onToothTap:)];
+        
+        [view addGestureRecognizer:recognizer];
     }
 }
 
@@ -198,11 +200,7 @@
 }
 
 -(void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    NSLog(@"Ratated: %ld", (long)fromInterfaceOrientation);
-    
-//    [_chartScrollView zoomToRect:_chartHolderView.frame animated:YES];
-    
-//    [_chartScrollView setZoomScale:0.29f animated:YES];
+    NSLog(@"Rotated: %ld", (long)fromInterfaceOrientation);
 }
 
 
@@ -262,6 +260,11 @@
         
         initialTopToothView = view;
     }
+}
+
+-(void)onToothTap:(id)param {
+    UIViewController *rootVC = [RBScreenManager sharedInstance].loadRootScreen.viewController;
+    [self.navigationController showViewController:rootVC sender:self];
 }
 
 

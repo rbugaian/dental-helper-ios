@@ -17,6 +17,18 @@
 		8016E1641D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016E1631D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard */; };
 		803F7FE81D21C0D400D5EE4B /* AddPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */; };
 		803F7FEA1D21C0E500D5EE4B /* AddPatientViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */; };
+		804363371DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 804363351DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m */; };
+		804363381DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804363361DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.xib */; };
+		8043633E1DDDFAA100ED3BCB /* RBItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8043633C1DDDFAA100ED3BCB /* RBItemTableViewCell.m */; };
+		8043633F1DDDFAA100ED3BCB /* RBItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8043633D1DDDFAA100ED3BCB /* RBItemTableViewCell.xib */; };
+		804363461DDE225200ED3BCB /* RBScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804363451DDE225200ED3BCB /* RBScreenViewController.m */; };
+		804363481DDE226200ED3BCB /* RBScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804363471DDE226200ED3BCB /* RBScreenViewController.storyboard */; };
+		8043634C1DDE268500ED3BCB /* RBMultichoiseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8043634B1DDE268500ED3BCB /* RBMultichoiseScreen.m */; };
+		8043634F1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8043634E1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.m */; };
+		804363521DDE517A00ED3BCB /* RBMultiChoiseScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804363511DDE517A00ED3BCB /* RBMultiChoiseScreenViewController.storyboard */; };
+		804363561DDE576E00ED3BCB /* RBChoiseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 804363551DDE576E00ED3BCB /* RBChoiseItem.m */; };
+		8043635A1DDE579200ED3BCB /* RBChoiseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 804363581DDE579200ED3BCB /* RBChoiseItemTableViewCell.m */; };
+		8043635B1DDE579200ED3BCB /* RBChoiseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804363591DDE579200ED3BCB /* RBChoiseItemTableViewCell.xib */; };
 		806301591CF497760041D307 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FA30181CD25DD700B278E3 /* Realm.framework */; };
 		8063015A1CF497760041D307 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80FA30181CD25DD700B278E3 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8063015E1CF4D4C10041D307 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8063015D1CF4D4C10041D307 /* CalendarViewController.m */; };
@@ -32,6 +44,16 @@
 		8063018E1CF4D5310041D307 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301801CF4D5310041D307 /* JTCalendarWeekView.m */; };
 		8063018F1CF4D5310041D307 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */; };
 		806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 806301841CF4D5310041D307 /* JTVerticalCalendarView.m */; };
+		806956641DD9DEB000A5F091 /* screen_structure.json in Resources */ = {isa = PBXBuildFile; fileRef = 806956631DD9DEB000A5F091 /* screen_structure.json */; };
+		806956691DD9E04C00A5F091 /* RootToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806956681DD9E04C00A5F091 /* RootToothViewController.m */; };
+		8069566C1DD9E09C00A5F091 /* RootToothViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8069566B1DD9E09C00A5F091 /* RootToothViewController.storyboard */; };
+		806956701DD9F44200A5F091 /* RBScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8069566F1DD9F44200A5F091 /* RBScreenManager.m */; };
+		806956731DD9F48F00A5F091 /* RBScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 806956721DD9F48F00A5F091 /* RBScreen.m */; };
+		806956761DDA013800A5F091 /* RBSimpleTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806956751DDA013800A5F091 /* RBSimpleTableViewController.storyboard */; };
+		8069567B1DDA01DC00A5F091 /* RBSimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8069567A1DDA01DC00A5F091 /* RBSimpleTableViewController.m */; };
+		8069567F1DDA041300A5F091 /* RBScreenItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8069567E1DDA041300A5F091 /* RBScreenItem.m */; };
+		806956831DDA054B00A5F091 /* RBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 806956821DDA054B00A5F091 /* RBItem.m */; };
+		806956861DDA108800A5F091 /* RBSimpleTableViewScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 806956851DDA108800A5F091 /* RBSimpleTableViewScreen.m */; };
 		80759F171D462B5400BEF1B4 /* ProcedureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80759F151D462B5400BEF1B4 /* ProcedureTableViewCell.m */; };
 		80759F181D462B5400BEF1B4 /* ProcedureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80759F161D462B5400BEF1B4 /* ProcedureTableViewCell.xib */; };
 		80759F1A1D463C3C00BEF1B4 /* ProceduresViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80759F191D463C3C00BEF1B4 /* ProceduresViewControllerTests.m */; };
@@ -106,6 +128,25 @@
 		803F7FE61D21C0D400D5EE4B /* AddPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPatientViewController.h; sourceTree = "<group>"; };
 		803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPatientViewController.m; sourceTree = "<group>"; };
 		803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPatientViewController.storyboard; sourceTree = "<group>"; };
+		804363341DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBScreenItemTableViewCell.h; sourceTree = "<group>"; };
+		804363351DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBScreenItemTableViewCell.m; sourceTree = "<group>"; };
+		804363361DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBScreenItemTableViewCell.xib; sourceTree = "<group>"; };
+		8043633B1DDDFAA100ED3BCB /* RBItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBItemTableViewCell.h; sourceTree = "<group>"; };
+		8043633C1DDDFAA100ED3BCB /* RBItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBItemTableViewCell.m; sourceTree = "<group>"; };
+		8043633D1DDDFAA100ED3BCB /* RBItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBItemTableViewCell.xib; sourceTree = "<group>"; };
+		804363441DDE225200ED3BCB /* RBScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBScreenViewController.h; sourceTree = "<group>"; };
+		804363451DDE225200ED3BCB /* RBScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBScreenViewController.m; sourceTree = "<group>"; };
+		804363471DDE226200ED3BCB /* RBScreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RBScreenViewController.storyboard; sourceTree = "<group>"; };
+		8043634A1DDE268500ED3BCB /* RBMultichoiseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMultichoiseScreen.h; sourceTree = "<group>"; };
+		8043634B1DDE268500ED3BCB /* RBMultichoiseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMultichoiseScreen.m; sourceTree = "<group>"; };
+		8043634D1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMultiChoiseScreenTableViewController.h; sourceTree = "<group>"; };
+		8043634E1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMultiChoiseScreenTableViewController.m; sourceTree = "<group>"; };
+		804363511DDE517A00ED3BCB /* RBMultiChoiseScreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RBMultiChoiseScreenViewController.storyboard; sourceTree = "<group>"; };
+		804363541DDE576E00ED3BCB /* RBChoiseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChoiseItem.h; sourceTree = "<group>"; };
+		804363551DDE576E00ED3BCB /* RBChoiseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChoiseItem.m; sourceTree = "<group>"; };
+		804363571DDE579200ED3BCB /* RBChoiseItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChoiseItemTableViewCell.h; sourceTree = "<group>"; };
+		804363581DDE579200ED3BCB /* RBChoiseItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChoiseItemTableViewCell.m; sourceTree = "<group>"; };
+		804363591DDE579200ED3BCB /* RBChoiseItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBChoiseItemTableViewCell.xib; sourceTree = "<group>"; };
 		8063015C1CF4D4C10041D307 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		8063015D1CF4D4C10041D307 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		806301621CF4D5310041D307 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
@@ -140,6 +181,23 @@
 		806301821CF4D5310041D307 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
 		806301831CF4D5310041D307 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
 		806301841CF4D5310041D307 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		806956631DD9DEB000A5F091 /* screen_structure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = screen_structure.json; sourceTree = "<group>"; };
+		806956671DD9E04C00A5F091 /* RootToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootToothViewController.h; sourceTree = "<group>"; };
+		806956681DD9E04C00A5F091 /* RootToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootToothViewController.m; sourceTree = "<group>"; };
+		8069566B1DD9E09C00A5F091 /* RootToothViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootToothViewController.storyboard; sourceTree = "<group>"; };
+		8069566E1DD9F44200A5F091 /* RBScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBScreenManager.h; sourceTree = "<group>"; };
+		8069566F1DD9F44200A5F091 /* RBScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBScreenManager.m; sourceTree = "<group>"; };
+		806956711DD9F48F00A5F091 /* RBScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBScreen.h; sourceTree = "<group>"; };
+		806956721DD9F48F00A5F091 /* RBScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBScreen.m; sourceTree = "<group>"; };
+		806956751DDA013800A5F091 /* RBSimpleTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RBSimpleTableViewController.storyboard; sourceTree = "<group>"; };
+		806956791DDA01DC00A5F091 /* RBSimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSimpleTableViewController.h; sourceTree = "<group>"; };
+		8069567A1DDA01DC00A5F091 /* RBSimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSimpleTableViewController.m; sourceTree = "<group>"; };
+		8069567D1DDA041300A5F091 /* RBScreenItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBScreenItem.h; sourceTree = "<group>"; };
+		8069567E1DDA041300A5F091 /* RBScreenItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBScreenItem.m; sourceTree = "<group>"; };
+		806956811DDA054B00A5F091 /* RBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBItem.h; sourceTree = "<group>"; };
+		806956821DDA054B00A5F091 /* RBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBItem.m; sourceTree = "<group>"; };
+		806956841DDA108800A5F091 /* RBSimpleTableViewScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSimpleTableViewScreen.h; sourceTree = "<group>"; };
+		806956851DDA108800A5F091 /* RBSimpleTableViewScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBSimpleTableViewScreen.m; sourceTree = "<group>"; };
 		80759F141D462B5400BEF1B4 /* ProcedureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcedureTableViewCell.h; sourceTree = "<group>"; };
 		80759F151D462B5400BEF1B4 /* ProcedureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcedureTableViewCell.m; sourceTree = "<group>"; };
 		80759F161D462B5400BEF1B4 /* ProcedureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcedureTableViewCell.xib; sourceTree = "<group>"; };
@@ -161,10 +219,10 @@
 		80EBD4511CC8160E003E4A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80EBD4531CC8160E003E4A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80EBD4541CC8160E003E4A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		80EBD4561CC8160E003E4A5E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		80EBD4571CC8160E003E4A5E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		80EBD4591CC8160E003E4A5E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		80EBD45A1CC8160E003E4A5E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		80EBD4561CC8160E003E4A5E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = DentalHelper/MainViewController.h; sourceTree = "<group>"; };
+		80EBD4571CC8160E003E4A5E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = DentalHelper/MainViewController.m; sourceTree = "<group>"; };
+		80EBD4591CC8160E003E4A5E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = DentalHelper/SecondViewController.h; sourceTree = "<group>"; };
+		80EBD45A1CC8160E003E4A5E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = DentalHelper/SecondViewController.m; sourceTree = "<group>"; };
 		80EBD45D1CC8160E003E4A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80EBD45F1CC8160E003E4A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80EBD4621CC8160E003E4A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,8 +236,8 @@
 		80F4B9361D4137C200481CD9 /* AppointmentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentsTableViewController.h; sourceTree = "<group>"; };
 		80F4B9371D4137C200481CD9 /* AppointmentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentsTableViewController.m; sourceTree = "<group>"; };
 		80F4B9391D4137D700481CD9 /* AppointmentsTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppointmentsTableViewController.storyboard; sourceTree = "<group>"; };
-		80FA30151CD24DE700B278E3 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
-		80FA30161CD24DE700B278E3 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		80FA30151CD24DE700B278E3 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleViewController.h; path = DentalHelper/ScheduleViewController.h; sourceTree = "<group>"; };
+		80FA30161CD24DE700B278E3 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleViewController.m; path = DentalHelper/ScheduleViewController.m; sourceTree = "<group>"; };
 		80FA30181CD25DD700B278E3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,12 +271,11 @@
 		8010DC6C1D4FDB18004093F1 /* DentalChart */ = {
 			isa = PBXGroup;
 			children = (
-				8010DC741D4FDC36004093F1 /* ToothView */,
-				8010DC6D1D4FDB51004093F1 /* RBDentalChartViewController.h */,
-				8010DC6E1D4FDB51004093F1 /* RBDentalChartViewController.m */,
-				8010DC701D4FDB60004093F1 /* RBDentalChartViewController.storyboard */,
+				806956661DD9E00E00A5F091 /* DentalChartViewController */,
+				806956651DD9DFF600A5F091 /* RootToothViewController */,
 			);
 			name = DentalChart;
+			path = DentalHelper;
 			sourceTree = "<group>";
 		};
 		8010DC741D4FDC36004093F1 /* ToothView */ = {
@@ -268,21 +325,7 @@
 				8015BB231CF599C50044E47C /* NewAppointmentViewController.m */,
 			);
 			name = NewAppointmentViewController;
-			sourceTree = "<group>";
-		};
-		8016E15D1D4A849900D760DF /* Procedure */ = {
-			isa = PBXGroup;
-			children = (
-				8016E15E1D4A84A500D760DF /* ProceduresViewController */,
-			);
-			name = Procedure;
-			sourceTree = "<group>";
-		};
-		8016E15E1D4A84A500D760DF /* ProceduresViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ProceduresViewController;
+			path = DentalHelper;
 			sourceTree = "<group>";
 		};
 		8016E15F1D4A84BA00D760DF /* AppointmentDetailsViewController */ = {
@@ -303,6 +346,117 @@
 				803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */,
 			);
 			name = AddPatientViewController;
+			path = DentalHelper;
+			sourceTree = "<group>";
+		};
+		804363331DDDF5AB00ED3BCB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				804363341DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.h */,
+				804363351DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m */,
+				804363361DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		804363391DDDFA8500ED3BCB /* RBItem */ = {
+			isa = PBXGroup;
+			children = (
+				8043633A1DDDFA8E00ED3BCB /* Cell */,
+				806956811DDA054B00A5F091 /* RBItem.h */,
+				806956821DDA054B00A5F091 /* RBItem.m */,
+			);
+			name = RBItem;
+			sourceTree = "<group>";
+		};
+		8043633A1DDDFA8E00ED3BCB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8043633B1DDDFAA100ED3BCB /* RBItemTableViewCell.h */,
+				8043633C1DDDFAA100ED3BCB /* RBItemTableViewCell.m */,
+				8043633D1DDDFAA100ED3BCB /* RBItemTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		804363401DDE21F300ED3BCB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				804363431DDE223600ED3BCB /* ViewController */,
+				806956711DD9F48F00A5F091 /* RBScreen.h */,
+				806956721DD9F48F00A5F091 /* RBScreen.m */,
+			);
+			name = Screen;
+			sourceTree = "<group>";
+		};
+		804363411DDE21FB00ED3BCB /* SimpleTableViewScreen */ = {
+			isa = PBXGroup;
+			children = (
+				804363421DDE221600ED3BCB /* ViewController */,
+				806956841DDA108800A5F091 /* RBSimpleTableViewScreen.h */,
+				806956851DDA108800A5F091 /* RBSimpleTableViewScreen.m */,
+			);
+			name = SimpleTableViewScreen;
+			sourceTree = "<group>";
+		};
+		804363421DDE221600ED3BCB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				806956751DDA013800A5F091 /* RBSimpleTableViewController.storyboard */,
+				806956791DDA01DC00A5F091 /* RBSimpleTableViewController.h */,
+				8069567A1DDA01DC00A5F091 /* RBSimpleTableViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		804363431DDE223600ED3BCB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				804363441DDE225200ED3BCB /* RBScreenViewController.h */,
+				804363451DDE225200ED3BCB /* RBScreenViewController.m */,
+				804363471DDE226200ED3BCB /* RBScreenViewController.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		804363491DDE265900ED3BCB /* MultiChoiseScreen */ = {
+			isa = PBXGroup;
+			children = (
+				804363501DDE516300ED3BCB /* ViewController */,
+				8043634A1DDE268500ED3BCB /* RBMultichoiseScreen.h */,
+				8043634B1DDE268500ED3BCB /* RBMultichoiseScreen.m */,
+			);
+			name = MultiChoiseScreen;
+			sourceTree = "<group>";
+		};
+		804363501DDE516300ED3BCB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8043634D1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.h */,
+				8043634E1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.m */,
+				804363511DDE517A00ED3BCB /* RBMultiChoiseScreenViewController.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		804363531DDE574B00ED3BCB /* ChoiseItem */ = {
+			isa = PBXGroup;
+			children = (
+				8043635C1DDE579600ED3BCB /* Cell */,
+				804363541DDE576E00ED3BCB /* RBChoiseItem.h */,
+				804363551DDE576E00ED3BCB /* RBChoiseItem.m */,
+			);
+			name = ChoiseItem;
+			sourceTree = "<group>";
+		};
+		8043635C1DDE579600ED3BCB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				804363571DDE579200ED3BCB /* RBChoiseItemTableViewCell.h */,
+				804363581DDE579200ED3BCB /* RBChoiseItemTableViewCell.m */,
+				804363591DDE579200ED3BCB /* RBChoiseItemTableViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		8063015F1CF4D4CC0041D307 /* Calendar */ = {
@@ -312,14 +466,7 @@
 				8063015D1CF4D4C10041D307 /* CalendarViewController.m */,
 			);
 			name = Calendar;
-			sourceTree = "<group>";
-		};
-		806301601CF4D5100041D307 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				806301611CF4D5310041D307 /* JTCalendar */,
-			);
-			name = Libs;
+			path = DentalHelper;
 			sourceTree = "<group>";
 		};
 		806301611CF4D5310041D307 /* JTCalendar */ = {
@@ -337,7 +484,8 @@
 				8063016F1CF4D5310041D307 /* Protocols */,
 				806301761CF4D5310041D307 /* Views */,
 			);
-			path = JTCalendar;
+			name = JTCalendar;
+			path = DentalHelper/JTCalendar;
 			sourceTree = "<group>";
 		};
 		8063016A1CF4D5310041D307 /* Managers */ = {
@@ -385,6 +533,106 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		806956601DD9DE1900A5F091 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				80FA30181CD25DD700B278E3 /* Realm.framework */,
+				806301611CF4D5310041D307 /* JTCalendar */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		806956611DD9DE3000A5F091 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8063015F1CF4D4CC0041D307 /* Calendar */,
+				8010DC6C1D4FDB18004093F1 /* DentalChart */,
+				80F4B9341D41378900481CD9 /* Appointment */,
+				80831A8F1D350BDE007D77C4 /* PatientNotesViewController */,
+				803F7FE51D21C0B800D5EE4B /* AddPatientViewController */,
+				809FE02D1D216D5A00F8416B /* PatientsViewController */,
+				8015BB211CF599A10044E47C /* NewAppointmentViewController */,
+				80EBD4561CC8160E003E4A5E /* MainViewController.h */,
+				80EBD4571CC8160E003E4A5E /* MainViewController.m */,
+				80EBD4591CC8160E003E4A5E /* SecondViewController.h */,
+				80EBD45A1CC8160E003E4A5E /* SecondViewController.m */,
+				80FA30151CD24DE700B278E3 /* ScheduleViewController.h */,
+				80FA30161CD24DE700B278E3 /* ScheduleViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		806956621DD9DE8200A5F091 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				806956631DD9DEB000A5F091 /* screen_structure.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		806956651DD9DFF600A5F091 /* RootToothViewController */ = {
+			isa = PBXGroup;
+			children = (
+				806956671DD9E04C00A5F091 /* RootToothViewController.h */,
+				806956681DD9E04C00A5F091 /* RootToothViewController.m */,
+				8069566B1DD9E09C00A5F091 /* RootToothViewController.storyboard */,
+			);
+			name = RootToothViewController;
+			sourceTree = "<group>";
+		};
+		806956661DD9E00E00A5F091 /* DentalChartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8010DC741D4FDC36004093F1 /* ToothView */,
+				8010DC6D1D4FDB51004093F1 /* RBDentalChartViewController.h */,
+				8010DC6E1D4FDB51004093F1 /* RBDentalChartViewController.m */,
+				8010DC701D4FDB60004093F1 /* RBDentalChartViewController.storyboard */,
+			);
+			name = DentalChartViewController;
+			sourceTree = "<group>";
+		};
+		8069566D1DD9F3EC00A5F091 /* ToothScreenManager */ = {
+			isa = PBXGroup;
+			children = (
+				806956871DDA124000A5F091 /* Screens */,
+				8069567C1DDA03F800A5F091 /* Items */,
+				8069566E1DD9F44200A5F091 /* RBScreenManager.h */,
+				8069566F1DD9F44200A5F091 /* RBScreenManager.m */,
+			);
+			name = ToothScreenManager;
+			sourceTree = "<group>";
+		};
+		8069567C1DDA03F800A5F091 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				804363531DDE574B00ED3BCB /* ChoiseItem */,
+				804363391DDDFA8500ED3BCB /* RBItem */,
+				806956801DDA053400A5F091 /* ScreenItem */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		806956801DDA053400A5F091 /* ScreenItem */ = {
+			isa = PBXGroup;
+			children = (
+				804363331DDDF5AB00ED3BCB /* Cell */,
+				8069567D1DDA041300A5F091 /* RBScreenItem.h */,
+				8069567E1DDA041300A5F091 /* RBScreenItem.m */,
+			);
+			name = ScreenItem;
+			sourceTree = "<group>";
+		};
+		806956871DDA124000A5F091 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				804363491DDE265900ED3BCB /* MultiChoiseScreen */,
+				804363411DDE21FB00ED3BCB /* SimpleTableViewScreen */,
+				804363401DDE21F300ED3BCB /* Screen */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
 		80759F101D462B0900BEF1B4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +651,7 @@
 				80831A931D350C23007D77C4 /* PatientNotesViewController.storyboard */,
 			);
 			name = PatientNotesViewController;
+			path = DentalHelper;
 			sourceTree = "<group>";
 		};
 		809FE0291D215CA100F8416B /* Utils */ = {
@@ -421,12 +670,14 @@
 				809FE02F1D216D9E00F8416B /* PatientsViewController.m */,
 			);
 			name = PatientsViewController;
+			path = DentalHelper;
 			sourceTree = "<group>";
 		};
 		80EBD4441CC8160E003E4A5E = {
 			isa = PBXGroup;
 			children = (
-				80FA30181CD25DD700B278E3 /* Realm.framework */,
+				806956621DD9DE8200A5F091 /* Resources */,
+				806956601DD9DE1900A5F091 /* Libs */,
 				80EBD44F1CC8160E003E4A5E /* DentalHelper */,
 				80EBD46C1CC8160E003E4A5E /* DentalHelperTests */,
 				80EBD4771CC8160E003E4A5E /* DentalHelperUITests */,
@@ -447,30 +698,17 @@
 		80EBD44F1CC8160E003E4A5E /* DentalHelper */ = {
 			isa = PBXGroup;
 			children = (
-				8016E15D1D4A849900D760DF /* Procedure */,
-				8010DC6C1D4FDB18004093F1 /* DentalChart */,
-				80F4B9341D41378900481CD9 /* Appointment */,
-				80831A8F1D350BDE007D77C4 /* PatientNotesViewController */,
-				803F7FE51D21C0B800D5EE4B /* AddPatientViewController */,
-				809FE02D1D216D5A00F8416B /* PatientsViewController */,
-				809FE0291D215CA100F8416B /* Utils */,
-				8015BB211CF599A10044E47C /* NewAppointmentViewController */,
+				8069566D1DD9F3EC00A5F091 /* ToothScreenManager */,
+				806956611DD9DE3000A5F091 /* Controllers */,
 				8015BB1D1CF597340044E47C /* Model */,
-				806301601CF4D5100041D307 /* Libs */,
+				809FE0291D215CA100F8416B /* Utils */,
 				80EBD4531CC8160E003E4A5E /* AppDelegate.h */,
 				80EBD4541CC8160E003E4A5E /* AppDelegate.m */,
-				80EBD4561CC8160E003E4A5E /* MainViewController.h */,
-				80EBD4571CC8160E003E4A5E /* MainViewController.m */,
-				80EBD4591CC8160E003E4A5E /* SecondViewController.h */,
-				80EBD45A1CC8160E003E4A5E /* SecondViewController.m */,
 				80EBD45C1CC8160E003E4A5E /* Main.storyboard */,
-				80FA30151CD24DE700B278E3 /* ScheduleViewController.h */,
-				80FA30161CD24DE700B278E3 /* ScheduleViewController.m */,
 				80EBD45F1CC8160E003E4A5E /* Assets.xcassets */,
 				80EBD4611CC8160E003E4A5E /* LaunchScreen.storyboard */,
 				80EBD4641CC8160E003E4A5E /* Info.plist */,
 				80EBD4501CC8160E003E4A5E /* Supporting Files */,
-				8063015F1CF4D4CC0041D307 /* Calendar */,
 			);
 			path = DentalHelper;
 			sourceTree = "<group>";
@@ -510,6 +748,7 @@
 				80F4B9351D41379100481CD9 /* AppointmentsViewController */,
 			);
 			name = Appointment;
+			path = DentalHelper;
 			sourceTree = "<group>";
 		};
 		80F4B9351D41379100481CD9 /* AppointmentsViewController */ = {
@@ -586,12 +825,13 @@
 		80EBD4451CC8160E003E4A5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Roman Bugaian";
 				TargetAttributes = {
 					80EBD44C1CC8160E003E4A5E = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 54MM8888KF;
+						ProvisioningStyle = Automatic;
 					};
 					80EBD4681CC8160E003E4A5E = {
 						CreatedOnToolsVersion = 7.3;
@@ -630,14 +870,22 @@
 			files = (
 				8010DC711D4FDB60004093F1 /* RBDentalChartViewController.storyboard in Resources */,
 				80EBD4631CC8160E003E4A5E /* LaunchScreen.storyboard in Resources */,
+				804363521DDE517A00ED3BCB /* RBMultiChoiseScreenViewController.storyboard in Resources */,
 				80A1C7491D67514E004FD4C7 /* RBBottomToothView.xib in Resources */,
+				8043635B1DDE579200ED3BCB /* RBChoiseItemTableViewCell.xib in Resources */,
+				804363481DDE226200ED3BCB /* RBScreenViewController.storyboard in Resources */,
 				80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */,
 				8010DC7C1D4FDC6E004093F1 /* RBTopToothView.xib in Resources */,
+				806956641DD9DEB000A5F091 /* screen_structure.json in Resources */,
+				806956761DDA013800A5F091 /* RBSimpleTableViewController.storyboard in Resources */,
 				80759F181D462B5400BEF1B4 /* ProcedureTableViewCell.xib in Resources */,
+				8069566C1DD9E09C00A5F091 /* RootToothViewController.storyboard in Resources */,
 				80F4B93A1D4137D700481CD9 /* AppointmentsTableViewController.storyboard in Resources */,
 				8016E1641D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard in Resources */,
 				80831A941D350C23007D77C4 /* PatientNotesViewController.storyboard in Resources */,
 				80EBD45E1CC8160E003E4A5E /* Main.storyboard in Resources */,
+				804363381DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.xib in Resources */,
+				8043633F1DDDFAA100ED3BCB /* RBItemTableViewCell.xib in Resources */,
 				803F7FEA1D21C0E500D5EE4B /* AddPatientViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,19 +912,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				806301871CF4D5310041D307 /* JTDateHelper.m in Sources */,
+				806956731DD9F48F00A5F091 /* RBScreen.m in Sources */,
 				8010DC7A1D4FDC63004093F1 /* RBTopToothView.m in Sources */,
 				8015BB201CF5976A0044E47C /* Appointment.m in Sources */,
+				804363461DDE225200ED3BCB /* RBScreenViewController.m in Sources */,
+				8069567F1DDA041300A5F091 /* RBScreenItem.m in Sources */,
+				806956831DDA054B00A5F091 /* RBItem.m in Sources */,
 				809FE0331D216EC300F8416B /* Patient.m in Sources */,
 				80F4B9381D4137C200481CD9 /* AppointmentsTableViewController.m in Sources */,
+				806956691DD9E04C00A5F091 /* RootToothViewController.m in Sources */,
 				806301861CF4D5310041D307 /* JTCalendarSettings.m in Sources */,
+				804363371DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m in Sources */,
 				806301881CF4D5310041D307 /* JTCalendarDelegateManager.m in Sources */,
 				80759F171D462B5400BEF1B4 /* ProcedureTableViewCell.m in Sources */,
 				8063018A1CF4D5310041D307 /* JTCalendarDayView.m in Sources */,
+				804363561DDE576E00ED3BCB /* RBChoiseItem.m in Sources */,
+				806956861DDA108800A5F091 /* RBSimpleTableViewScreen.m in Sources */,
 				8015BB241CF599C50044E47C /* NewAppointmentViewController.m in Sources */,
 				8063018B1CF4D5310041D307 /* JTCalendarMenuView.m in Sources */,
+				8043634C1DDE268500ED3BCB /* RBMultichoiseScreen.m in Sources */,
 				80EBD45B1CC8160E003E4A5E /* SecondViewController.m in Sources */,
 				806301901CF4D5310041D307 /* JTVerticalCalendarView.m in Sources */,
+				806956701DD9F44200A5F091 /* RBScreenManager.m in Sources */,
 				803F7FE81D21C0D400D5EE4B /* AddPatientViewController.m in Sources */,
+				8069567B1DDA01DC00A5F091 /* RBSimpleTableViewController.m in Sources */,
+				8043634F1DDE515F00ED3BCB /* RBMultiChoiseScreenTableViewController.m in Sources */,
+				8043635A1DDE579200ED3BCB /* RBChoiseItemTableViewCell.m in Sources */,
 				8063018D1CF4D5310041D307 /* JTCalendarWeekDayView.m in Sources */,
 				80831A921D350BFF007D77C4 /* PatientsNotesViewController.m in Sources */,
 				80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */,
@@ -685,6 +946,7 @@
 				806301851CF4D5310041D307 /* JTCalendarManager.m in Sources */,
 				80EBD4581CC8160E003E4A5E /* MainViewController.m in Sources */,
 				8063015E1CF4D4C10041D307 /* CalendarViewController.m in Sources */,
+				8043633E1DDDFAA100ED3BCB /* RBItemTableViewCell.m in Sources */,
 				809FE0301D216D9E00F8416B /* PatientsViewController.m in Sources */,
 				8010DC6F1D4FDB51004093F1 /* RBDentalChartViewController.m in Sources */,
 				8063018C1CF4D5310041D307 /* JTCalendarPageView.m in Sources */,
@@ -764,10 +1026,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -790,6 +1055,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -809,10 +1075,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -828,6 +1097,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -838,17 +1108,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54MM8888KF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DentalHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.rbugaian.DentalHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.rbugaian.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -856,15 +1128,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 54MM8888KF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DentalHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.rbugaian.DentalHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.rbugaian.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

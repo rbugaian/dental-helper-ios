@@ -27,7 +27,6 @@
     [_calendarManager setContentView:_calendarContentView];
     [_calendarManager setDate:[NSDate date]];
     
-    //[self loadAppointments];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -57,7 +56,6 @@
     } else if([_calendarManager.dateHelper date:[NSDate date] isTheSameDayThan:dayView.date]) {
         dayView.circleView.hidden = NO;
         dayView.circleView.backgroundColor = self.view.tintColor;
-//        dayView.dotView.hidden = NO;
         dayView.dotView.backgroundColor = [UIColor whiteColor];
         dayView.textLabel.textColor = [UIColor whiteColor];
     } else {

@@ -3,24 +3,47 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[ScheduleViewController reloadScheduleForDate:]:ScheduleViewController.m">
+         contextName = "-[RBDentalChartViewController scrollViewDidEndZooming:withView:atScale:]:RBDentalChartViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "appointment.startDate">
-            </PersistentString>
-            <PersistentString
-               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+               value = "self.view.frame.size.height">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[AddPatientViewController saveExistingPatient]:AddPatientViewController.m">
+         contextName = "-[RBSimpleTableViewScreen sectionsCount]:RBSimpleTableViewScreen.m">
          <PersistentStrings>
             <PersistentString
-               value = "_patient.notes">
+               value = "(NSArray *)[_sectionsDict objectForKey:@&quot;_&quot;]">
             </PersistentString>
             <PersistentString
-               value = "self.patientsNotes">
+               value = "self.items.count">
+            </PersistentString>
+            <PersistentString
+               value = "_sectionsDict.allKeys.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBSimpleTableViewScreen numberOfRowsInSection:]:RBSimpleTableViewScreen.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.items.count">
+            </PersistentString>
+            <PersistentString
+               value = "_sectionsDict">
+            </PersistentString>
+            <PersistentString
+               value = "(NSInteger)[[_sectionsDict objectForKey:sectionKey] count]">
+            </PersistentString>
+            <PersistentString
+               value = "((NSArray *)[_sectionsDict objectForKey:@&quot;_&quot;]).count">
+            </PersistentString>
+            <PersistentString
+               value = "_sectionsDict.allKeys.count">
+            </PersistentString>
+            <PersistentString
+               value = "[self sectionsCount]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -36,32 +59,29 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[ScheduleViewController reloadScheduleForDate:]:ScheduleViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[NSCalendar currentCalendar] isDate:appointment.startDate inSameDayAsDate:date]">
+            </PersistentString>
+            <PersistentString
+               value = "appointment.startDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBSimpleTableViewScreen itemForIndexPath:]:RBSimpleTableViewScreen.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ProceduresViewControllerUITests testAppointmentCreation]:ProceduresViewControllerUITests.m">
          <PersistentStrings>
             <PersistentString
                value = "(NSString *)[[[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeTextView].element value]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[RBDentalChartViewController viewDidLoad]:RBDentalChartViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.view.window.frame.size.height">
-            </PersistentString>
-            <PersistentString
-               value = "_chartHolderView.frame.size.height">
-            </PersistentString>
-            <PersistentString
-               value = "self.view.frame.size.height">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[RBDentalChartViewController scrollViewDidEndZooming:withView:atScale:]:RBDentalChartViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.view.frame.size.height">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -83,6 +103,31 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[AddPatientViewController saveExistingPatient]:AddPatientViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_patient.notes">
+            </PersistentString>
+            <PersistentString
+               value = "self.patientsNotes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBDentalChartViewController viewDidLoad]:RBDentalChartViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.window.frame.size.height">
+            </PersistentString>
+            <PersistentString
+               value = "_chartHolderView.frame.size.height">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[AddPatientViewController initTextFields]:AddPatientViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -92,6 +137,9 @@
                value = "self.patient.notes">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RBDentalChartViewController onToothTap:]:RBDentalChartViewController.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

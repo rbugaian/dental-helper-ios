@@ -1,0 +1,434 @@
+{
+    "type": "simple_table_view_screen",
+    "title": "Procedure Details",
+    "items": [
+              {
+              "item_type": "screen_item",
+              "title": "Tooth Condition",
+              "section": "",
+              "screen": {
+              "type": "simple_table_view_screen",
+              "title": "Tooth Condition",
+              "items": [
+                        {
+                        "item_type": "single_choice_item",
+                        "options": [
+                                    "Intact",
+                                    "Absent",
+                                    "Implant"
+                                    ],
+                        "section": ""
+                        },
+                        {
+                        "item_type": "checkmark_item",
+                        "title": "Extraction indicated",
+                        "section": ""
+                        },
+                        {
+                        "item_type": "multi_choice_item",
+                        "options": [
+                                    "Coronal fracture",
+                                    "Root fracture"
+                                    ],
+                        "section": "Fracture"
+                        },
+                        {
+                        "item_type": "single_choice_item",
+                        "options": [
+                                    "Only root",
+                                    "Residual root"
+                                    ],
+                        "section": ""
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "section": "",
+                        "title": "Decay",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        }
+                        ]
+              }
+              },
+              {
+              "item_type": "screen_item",
+              "title": "Composite Filling",
+              "section": "",
+              "screen": {
+              "type": "simple_table_view_screen",
+              "title": "General Dentistry",
+              "items": [
+                        {
+                        "item_type": "screen_item",
+                        "title": "Amalgam",
+                        "section": "",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Composite Filling",
+                        "section": "",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Direct Veneer",
+                        "section": "",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Glass Lonomer",
+                        "section": "",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Provisional Restoration",
+                        "section": "",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Unsatisfactory Filling",
+                        "section": "",
+                        "screen": {
+                        "type": "multi_choice_screen",
+                        "items": [
+                                  "Occlusal",
+                                  "Mesial",
+                                  "Distal",
+                                  "Occlusal Facial",
+                                  "Occlusal Lingual",
+                                  "Facial",
+                                  "Lingual",
+                                  "Gingival Facial",
+                                  "Gingival Lingual",
+                                  "Mesial Edge",
+                                  "Distal Edge"
+                                  ]
+                        }
+                        }
+                        ]
+              }
+              },
+              {
+              "item_type": "screen_item",
+              "title": "Periodontics",
+              "section": "",
+              "screen": {
+              "type": "simple_table_view_screen",
+              "title": "Periodontics",
+              "items": [
+                        {
+                        "item_type": "single_choice_item",
+                        "options": [
+                                    "Grade I",
+                                    "Grade II",
+                                    "Grade III"
+                                    ],
+                        "section": "Mobility"
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Gingival Margin",
+                        "section": "",
+                        "screen": {
+                        "type": "measurement_screen",
+                        "sections": [
+                                     {
+                                     "title": "Facial",
+                                     "measurements": [
+                                                      {
+                                                      "title": "Mesial",
+                                                      "min": 0,
+                                                      "max": 7,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Central",
+                                                      "min": 0,
+                                                      "max": 7,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Distal",
+                                                      "min": 0,
+                                                      "max": 7,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      }
+                                                      ]
+                                     },
+                                     {
+                                     "title": "Lingual",
+                                     "measurements": [
+                                                      {
+                                                      "title": "Mesial",
+                                                      "min": 0,
+                                                      "max": 7,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Central",
+                                                      "min": 0,
+                                                      "max": 7,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Distal",
+                                                      "min": 0,
+                                                      "max": 7,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      }
+                                                      ]
+                                     }
+                                     ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Probing Depth",
+                        "section": "",
+                        "screen": {
+                        "type": "measurement_screen",
+                        "sections": [
+                                     {
+                                     "title": "Facial",
+                                     "measurements": [
+                                                      {
+                                                      "title": "Mesial",
+                                                      "min": 0,
+                                                      "max": 14,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Central",
+                                                      "min": 0,
+                                                      "max": 14,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Distal",
+                                                      "min": 0,
+                                                      "max": 14,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      }
+                                                      ]
+                                     },
+                                     {
+                                     "title": "Lingual",
+                                     "measurements": [
+                                                      {
+                                                      "title": "Mesial",
+                                                      "min": 0,
+                                                      "max": 14,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Central",
+                                                      "min": 0,
+                                                      "max": 14,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      },
+                                                      {
+                                                      "title": "Distal",
+                                                      "min": 0,
+                                                      "max": 14,
+                                                      "step": 1,
+                                                      "unit": "mm"
+                                                      }
+                                                      ]
+                                     }
+                                     ]
+                        }
+                        },
+                        {
+                        "item_type": "screen_item",
+                        "title": "Bleeding Sites",
+                        "section": "",
+                        "screen": {
+                        "type": "simple_table_view_screen",
+                        "sections": [
+                                     {
+                                     "title": "Facial",
+                                     "items": [
+                                               "Mesial",
+                                               "Distal",
+                                               "Central"
+                                               ]
+                                     },
+                                     {
+                                     "title": "Lingual",
+                                     "items": [
+                                               "Mesial",
+                                               "Distal",
+                                               "Central"
+                                               ]
+                                     }
+                                     ]
+                        }
+                        }
+                        ]
+              }
+              },
+              {
+              "item_type": "screen_item",
+              "title": "Prosthodontics",
+              "section": "",
+              "screen": {
+              "type": "multi_choice_sectioned_screen",
+              "sections": [
+                           {
+                           "title": "Satisfactory",
+                           "items": [
+                                     "Esthetic Crown",
+                                     "Metallic Crown",
+                                     "Temporary Crown",
+                                     "Dowel Core",
+                                     "Bridge",
+                                     "Onlay / Inlay",
+                                     "Indirect Restoration"
+                                     ]
+                           },
+                           {
+                           "title": "Unsatisfactory",
+                           "items": [
+                                     "Unsatisfactory Crown",
+                                     "Unsatisfactory Indirect Restoration"
+                                     ]
+                           }
+                           ]
+              }
+              },
+              {
+              "item_type": "screen_item",
+              "title": "Endodontics",
+              "section": "",
+              "screen": {
+              "type": "multi_choice_sectioned_screen",
+              "sections": [
+                           {
+                           "title": "Satisfactory",
+                           "items": [
+                                     "Treated Root Canal",
+                                     "Apicectomy",
+                                     "Temporary Crown",
+                                     "Dowel Core",
+                                     "Bridge",
+                                     "Onlay / Inlay",
+                                     "Indirect Restoration"
+                                     ]
+                           },
+                           {
+                           "title": "Unsatisfactory",
+                           "items": [
+                                     "Unsatisfactory Treated Root Canal",
+                                     "Periodical Lesion",
+                                     "Root Resorption"
+                                     ]
+                           }
+                           ]
+              }
+              }
+              ]
+}
