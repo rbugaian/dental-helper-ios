@@ -58,6 +58,7 @@ CGFloat navbarMargin = 84.0f;
     
     [self addAppointmentsToTimeline:appointmetsArray];
     
+    
 }
 
 - (void) addAppointmentsToTimeline:(NSArray *)appointments {

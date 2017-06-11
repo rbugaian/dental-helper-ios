@@ -18,4 +18,6 @@
 
 @property (strong, nonatomic) MainViewController *rootViewController;
 
+@property (strong, nonatomic) NSDate *currentSelectedDate;
+
 @end

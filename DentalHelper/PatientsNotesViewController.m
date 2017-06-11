@@ -57,12 +57,17 @@
         [self.notesTextView resignFirstResponder];
         
         Patient *patient = self.addPatientViewController.patient;
-        [[RLMRealm defaultRealm] beginWriteTransaction];
         
         patient.notes = self.notesTextView.text;
         
-        [[RLMRealm defaultRealm] addOrUpdateObject:patient];
-        [[RLMRealm defaultRealm] commitWriteTransaction];
+        self.addPatientViewController.patientsNotes = self.notesTextView.text;
+        
+        if (patient != nil) {
+            [[RLMRealm defaultRealm] beginWriteTransaction];
+            [[RLMRealm defaultRealm] addOrUpdateObject:patient];
+            [[RLMRealm defaultRealm] commitWriteTransaction];
+        }
+        
         
         [self.navigationController popViewControllerAnimated:YES];
     } else {

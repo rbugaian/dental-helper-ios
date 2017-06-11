@@ -15,6 +15,8 @@
 		8015BB241CF599C50044E47C /* NewAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8015BB231CF599C50044E47C /* NewAppointmentViewController.m */; };
 		8016E1621D4A8B9300D760DF /* RBAppointmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016E1611D4A8B9300D760DF /* RBAppointmentDetailsViewController.m */; };
 		8016E1641D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016E1631D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard */; };
+		8025B7741EECD2C40028AD2F /* RBProcedureSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8025B7731EECD2C40028AD2F /* RBProcedureSearchController.m */; };
+		8025B7761EECD2CD0028AD2F /* RBProcedureSearchController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8025B7751EECD2CD0028AD2F /* RBProcedureSearchController.storyboard */; };
 		803F7FE81D21C0D400D5EE4B /* AddPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */; };
 		803F7FEA1D21C0E500D5EE4B /* AddPatientViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */; };
 		804363371DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 804363351DDDF5DE00ED3BCB /* RBScreenItemTableViewCell.m */; };
@@ -125,6 +127,9 @@
 		8016E1601D4A8B9300D760DF /* RBAppointmentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBAppointmentDetailsViewController.h; sourceTree = "<group>"; };
 		8016E1611D4A8B9300D760DF /* RBAppointmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBAppointmentDetailsViewController.m; sourceTree = "<group>"; };
 		8016E1631D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RBAppointmentDetailsViewController.storyboard; sourceTree = "<group>"; };
+		8025B7721EECD2C40028AD2F /* RBProcedureSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBProcedureSearchController.h; sourceTree = "<group>"; };
+		8025B7731EECD2C40028AD2F /* RBProcedureSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBProcedureSearchController.m; sourceTree = "<group>"; };
+		8025B7751EECD2CD0028AD2F /* RBProcedureSearchController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RBProcedureSearchController.storyboard; sourceTree = "<group>"; };
 		803F7FE61D21C0D400D5EE4B /* AddPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPatientViewController.h; sourceTree = "<group>"; };
 		803F7FE71D21C0D400D5EE4B /* AddPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPatientViewController.m; sourceTree = "<group>"; };
 		803F7FE91D21C0E500D5EE4B /* AddPatientViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPatientViewController.storyboard; sourceTree = "<group>"; };
@@ -336,6 +341,16 @@
 				8016E1631D4A8BA700D760DF /* RBAppointmentDetailsViewController.storyboard */,
 			);
 			name = AppointmentDetailsViewController;
+			sourceTree = "<group>";
+		};
+		8025B7711EECD29E0028AD2F /* ProcedureSearchController */ = {
+			isa = PBXGroup;
+			children = (
+				8025B7721EECD2C40028AD2F /* RBProcedureSearchController.h */,
+				8025B7731EECD2C40028AD2F /* RBProcedureSearchController.m */,
+				8025B7751EECD2CD0028AD2F /* RBProcedureSearchController.storyboard */,
+			);
+			name = ProcedureSearchController;
 			sourceTree = "<group>";
 		};
 		803F7FE51D21C0B800D5EE4B /* AddPatientViewController */ = {
@@ -744,6 +759,7 @@
 		80F4B9341D41378900481CD9 /* Appointment */ = {
 			isa = PBXGroup;
 			children = (
+				8025B7711EECD29E0028AD2F /* ProcedureSearchController */,
 				8016E15F1D4A84BA00D760DF /* AppointmentDetailsViewController */,
 				80F4B9351D41379100481CD9 /* AppointmentsViewController */,
 			);
@@ -877,6 +893,7 @@
 				80EBD4601CC8160E003E4A5E /* Assets.xcassets in Resources */,
 				8010DC7C1D4FDC6E004093F1 /* RBTopToothView.xib in Resources */,
 				806956641DD9DEB000A5F091 /* screen_structure.json in Resources */,
+				8025B7761EECD2CD0028AD2F /* RBProcedureSearchController.storyboard in Resources */,
 				806956761DDA013800A5F091 /* RBSimpleTableViewController.storyboard in Resources */,
 				80759F181D462B5400BEF1B4 /* ProcedureTableViewCell.xib in Resources */,
 				8069566C1DD9E09C00A5F091 /* RootToothViewController.storyboard in Resources */,
@@ -942,6 +959,7 @@
 				80831A921D350BFF007D77C4 /* PatientsNotesViewController.m in Sources */,
 				80EBD4551CC8160E003E4A5E /* AppDelegate.m in Sources */,
 				80FA30171CD24DE700B278E3 /* ScheduleViewController.m in Sources */,
+				8025B7741EECD2C40028AD2F /* RBProcedureSearchController.m in Sources */,
 				809FE02C1D215CB300F8416B /* Utils.m in Sources */,
 				806301851CF4D5310041D307 /* JTCalendarManager.m in Sources */,
 				80EBD4581CC8160E003E4A5E /* MainViewController.m in Sources */,

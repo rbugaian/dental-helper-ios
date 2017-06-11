@@ -33,6 +33,7 @@
     [super viewWillAppear:animated];
     
     [self loadAppointments];
+//    [_calendarManager reload];
 }
 
 - (void) loadAppointments {
@@ -53,7 +54,12 @@
         dayView.circleView.hidden = YES;
         dayView.textLabel.textColor = [UIColor grayColor];
         
-    } else if([_calendarManager.dateHelper date:[NSDate date] isTheSameDayThan:dayView.date]) {
+    } else if( [_calendarManager.dateHelper date:self.currentSelectedDate isTheSameDayThan:dayView.date]) {
+        dayView.circleView.hidden = NO;
+        dayView.circleView.backgroundColor = self.view.tintColor;
+        dayView.dotView.backgroundColor = [UIColor whiteColor];
+        dayView.textLabel.textColor = [UIColor whiteColor];
+    } else if ([_calendarManager.dateHelper date:[NSDate date] isTheSameDayThan:dayView.date]) {
         dayView.circleView.hidden = NO;
         dayView.circleView.backgroundColor = self.view.tintColor;
         dayView.dotView.backgroundColor = [UIColor whiteColor];
@@ -77,6 +83,7 @@
 - (void)calendar:(JTCalendarManager *)calendar didTouchDayView:(JTCalendarDayView *)dayView {
     [_rootViewController onCalenderSwitchClicked:nil];
     [_rootViewController didSelectDay:[Utils getLocalDate:dayView.date]];
+    self.currentSelectedDate = dayView.date;
 }
 
 

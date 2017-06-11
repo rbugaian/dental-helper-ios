@@ -44,6 +44,12 @@
     return item;
 }
 
++ (RBItem *)itemWithDict:(NSDictionary *)dict andParentScreen:(RBScreen *)screen {
+    RBItem *item = [RBItem itemWithDict:dict];
+    item.parentScreen = screen;
+    return item;
+}
+
 - (void)processTableViewCell:(UITableViewCell *)cell {
     if ([cell isKindOfClass:[RBItemTableViewCell class]]) {
         cell.textLabel.text = @"RBItem";
